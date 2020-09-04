@@ -7,7 +7,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#coding-line {
+  width: 200px;
+}
+
+.p-background {
+  position: absolute;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  background: rgba(209, 107, 111, 0.1);
+  width:110%;
+  height: 88%;
+}
+
+.intext-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  opacity: 80%;
+}
+
+.intext-link:hover {
+  font-weight: 600;
+  opacity: 100%;
+}
+
+.intext-link:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  opacity: 30%;
 }

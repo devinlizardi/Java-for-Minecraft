@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+  } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Intro from './components/intro.jsx';
+import './components/header.css';
+
+import Setup from './components/setup.jsx';
+
+class App extends React.Component {
+    render() {
+        return (
+            <Router>
+                <div>
+                    <div className="header">
+                        <Link to="/" id="header-title"><h1>lizard learning</h1></Link>
+                        <Link to="/setup" className="header-link">Setup</Link> |
+                        <Link to="/" className="header-link"> OOP</Link> | 
+                        <Link to="/" className="header-link"> Java Syntax</Link> | 
+                        <Link to="/" className="header-link"> Continuing</Link>
+                    </div>
+                    <br />
+                    <hr className="header-line" />
+
+                    <Switch>
+                        <Route exact path="/">
+                            <Intro />
+                        </Route>
+                        <Route path="/setup">
+                            <Setup />
+                        </Route>
+                    </Switch>
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;

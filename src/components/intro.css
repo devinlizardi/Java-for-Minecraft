@@ -1,0 +1,26 @@
+.intro {
+    margin-top: 20px;
+    font-size: large;
+    margin: auto;
+    width: 800px;
+}
+
+.intro h3 {
+    font-weight: bold;
+    font-size: 130%;
+    color: #3E3243;
+    line-height: 20%;
+}
+
+.intro p {
+    position: relative;
+}
+
+.intro-line {
+    color: #D16B78;
+    background-color: #D16B78;
+    margin-left: 30px;
+    width: 130px;
+    height: 3px;
+    border: 0;
+}
