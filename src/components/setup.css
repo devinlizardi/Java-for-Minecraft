@@ -50,20 +50,42 @@
 }
 
 .detail-opener {
-    background: rgba(37, 92, 153, 0.1);
-    width: 200px;
+    background: rgba(245, 237, 240, 1);
+    width: 250px;
+    height: 10px;
     cursor: pointer;
-    line-height: 50%;
+    line-height: 70%;
+    margin-left: -20px;
+}
+
+.detail-opener:hover {
+    background: rgba(245, 237, 240, 0.3);
 }
 
 .detail-background {
     margin: auto;
     position: absolute;
     left: 50%;
-    top: 6%;
+    top: -5px;
     transform: translateX(-50%);
-    background: rgba(37, 92, 153, 0.1);
-    width: 90%;
-    height: 88%;
+    background: rgba(245, 237, 240, 1);
+    width: 103%;
+    height: 100%;
     z-index: -1;
+}
+
+.details-opened {
+    position: relative;
+    top: -10px;
+}
+
+.details-opened p {
+    position: relative;
+    top: -10px;
+}
+
+.details-opened-title {
+    font-weight: lighter;
+    font-size: 115%;
+    line-height: 50%;
 }

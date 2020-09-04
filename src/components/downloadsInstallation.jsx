@@ -1,7 +1,9 @@
 import React from 'react';
 import './setup.css';
 
-import Details from './installDetails.jsx';
+import JavaDetails from './installDetails.jsx';
+import ForgeDetails from './installDetailsForge.jsx';
+import IntelliJDetails from './installDetailsIntelliJ.jsx';
 
 class DownloadsInstallation extends React.Component {
     constructor(props) {
@@ -47,11 +49,12 @@ class DownloadsInstallation extends React.Component {
                     for a more detailed guide, otherwise move on when you're comfortable.
                 </p>
                 <div className="details">
-                    <h4 className="detail-opener" onClick={this.openDetails}> Installation Details </h4>
+                    <h3 className="detail-opener" onClick={this.openDetails}> Installation Details </h3>
                     {this.state.detailsOpened &&
                         <div>
-                            <div className="detail-background"/>
-                            <Details />
+                            <JavaDetails />
+                            <ForgeDetails />
+                            <IntelliJDetails />
                         </div>
                      }
                 </div>
