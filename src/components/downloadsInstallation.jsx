@@ -22,7 +22,7 @@ class DownloadsInstallation extends React.Component {
 
     render() {
         return (
-            <div className="download-opened">
+            <div>
                 <hr id="coding-line" className="download-line" />
                 <p>
                     Because we have to crack open Minecraft so we can modify and add our own things,

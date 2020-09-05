@@ -14,8 +14,8 @@
 .setup-line {
     width: 500px;
     margin-top: 0;
-    color: rgba(37, 92, 153, 0.6);
-    background-color: rgba(37, 92, 153, 0.6);
+    color: rgba(124, 194, 181, 0.6);
+    background-color: rgba(124, 194, 181, 0.6);
     height: 6px;
     border: 0;
 }
@@ -31,11 +31,31 @@
     background: rgba(37, 92, 153, 0.3);
 }
 
+.ideprojstruct {
+    width: 310px;
+    height: 10px;
+    background: rgba(241, 143, 1, 0.2);
+}
+
+.ideprojstruct:hover {
+    cursor: pointer;
+    background: rgba(241, 143, 1, 0.8);
+}
+
 .download-line {
     color: #255C99;
     background-color: #255C99;
     margin-left: 30px;
     width: 130px;
+    height: 3px;
+    border: 0;
+}
+
+.ide-line {
+    color: #F18F01;
+    background-color: #F18F01;
+    margin-left: 30px;
+    width: 110px;
     height: 3px;
     border: 0;
 }
