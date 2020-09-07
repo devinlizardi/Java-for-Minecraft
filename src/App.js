@@ -11,6 +11,8 @@ import './components/header.css';
 
 import Setup from './components/setup.jsx';
 
+import Tutorial from './components/tutorial.jsx';
+
 class App extends React.Component {
     render() {
         return (
@@ -20,8 +22,7 @@ class App extends React.Component {
                         <Link to="/" id="header-title"><h1>lizard learning</h1></Link>
                         <Link to="/" className="header-link"> Intro </Link> |
                         <Link to="/setup" className="header-link"> Getting Started </Link> |
-                        <Link to="/" className="header-link"> Tutorial </Link> | 
-                        <Link to="/" className="header-link"> Examples </Link>
+                        <Link to="/tutorial" className="header-link"> Tutorial </Link>
                     </div>
                     <br />
                     <hr className="header-line" />
@@ -32,6 +33,9 @@ class App extends React.Component {
                         </Route>
                         <Route path="/setup">
                             <Setup />
+                        </Route>
+                        <Route path="/tutorial">
+                            <Tutorial />
                         </Route>
                     </Switch>
                 </div>

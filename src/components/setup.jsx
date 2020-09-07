@@ -5,6 +5,8 @@ import Downloads from './downloadsInstallation.jsx';
 import IDEProjectStructure from './ideProjectStructure.jsx';
 import Concepts from './concepts.jsx';
 
+import { CSSTransitionGroup } from 'react-transition-group';
+
 class Setup extends React.Component {
     constructor(props) {
         super(props);
@@ -52,25 +54,31 @@ class Setup extends React.Component {
         return (
             <div className="setup">
                 <div className={this.state.downloadsClass} onClick={ () => this.openTitle('downloads') }>
-                    <h3>Downloads and Installation</h3>
+                <h3>Downloads and Installation</h3>
                 </div>
-                { downloadsOpened && <Downloads /> }
-                <br />
-                <hr className="setup-line" />
-                {/* COMPONENT BREAK */}
+                <CSSTransitionGroup transitionName="example">
+                    { downloadsOpened && <Downloads /> }
+                    <br />
+                    <hr className="setup-line" />
+                </CSSTransitionGroup>
+
                 <div className={this.state.ideprojstructClass} onClick={ () => this.openTitle('ideprojstruct') }>
                     <h3>IDE and Project Structure</h3>
                 </div>
-                { ideprojstructOpened && <IDEProjectStructure /> }
-                <br />
-                <hr className="setup-line" />
-                {/* COMPONENT BREAK */}
+                <CSSTransitionGroup transitionName="example">
+                    { ideprojstructOpened && <IDEProjectStructure /> }
+                    <br />
+                    <hr className="setup-line" />
+                </CSSTransitionGroup>
+
                 <div className={this.state.conceptsClass} onClick={ () => this.openTitle('concepts') }>
                     <h3>Additional Concepts</h3>
                 </div>
-                { conceptsOpened && <Concepts /> }
-                <br />
-                <hr className="setup-line" />
+                <CSSTransitionGroup transitionName="example">
+                    { conceptsOpened && <Concepts /> }
+                    <br />
+                    <hr className="setup-line" />
+                </CSSTransitionGroup>
             </div>
         )
     }
