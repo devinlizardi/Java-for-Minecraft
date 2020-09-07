@@ -1,0 +1,21 @@
+.subheader-1 {
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: -15px;
+}
+
+.default-text {
+    position: relative;
+    margin-left: 15px;
+}
+
+.default-text-bg {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translateX(-50%);
+    width: 115%;
+    height: 94%;
+    z-index: -1;
+}

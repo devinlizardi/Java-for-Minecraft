@@ -16,6 +16,16 @@
     position: relative;
 }
 
+.intro-background {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    background: rgba(209, 107, 111, 0.1);
+    width:110%;
+    height: 95%;
+}
+
 .intro-line {
     color: #D16B78;
     background-color: #D16B78;
@@ -23,4 +33,9 @@
     width: 130px;
     height: 3px;
     border: 0;
+}
+
+.instructions-text {
+    position: relative;
+    left: 20px;
 }

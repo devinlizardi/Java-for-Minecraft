@@ -3,13 +3,20 @@ import './setup.css';
 
 import Downloads from './downloadsInstallation.jsx';
 import IDEProjectStructure from './ideProjectStructure.jsx';
+import Concepts from './concepts.jsx';
 
 class Setup extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            downloadsOpened : false,
+            downloadsOpened : true,
+            downloadsClass : 'download',
+
             ideprojstructOpened : false,
+            ideprojstructClass : 'ideprojstruct',
+
+            conceptsOpened : false,
+            conceptsClass : 'concepts',
         }
         this.openTitle = this.openTitle.bind(this);
     }
@@ -17,29 +24,51 @@ class Setup extends React.Component {
     openTitle(name) {
         switch (name) {
             case "downloads":
-                this.setState({ downloadsOpened: !this.state.downloadsOpened });
+                this.setState({ 
+                    downloadsOpened: !this.state.downloadsOpened,
+                    downloadsClass: this.state.downloadsClass === 'download' 
+                                    ? 'download-open' : 'download',
+                 });
                 break;
             case "ideprojstruct":
-                this.setState({ ideprojstructOpened : !this.state.ideprojstructOpened });
+                this.setState({ 
+                    ideprojstructOpened : !this.state.ideprojstructOpened,
+                    ideprojstructClass : this.state.ideprojstructClass === 'ideprojstruct'
+                                        ? 'ideprojstruct-open' : 'ideprojstruct',
+                });
+                break;
+            case "concepts":
+                this.setState({ 
+                    conceptsOpened : !this.state.conceptsOpened,
+                    conceptsClass : this.state.conceptsClass === 'concepts'
+                                        ? 'concepts-open' : 'concepts',
+                });
                 break;
         }
     }
 
     render() {
-        const { downloadsOpened, ideprojstructOpened } = this.state
+        const { downloadsOpened, ideprojstructOpened, conceptsOpened } = this.state
         return (
             <div className="setup">
-                <div className="download" onClick={ () => this.openTitle('downloads') }>
+                <div className={this.state.downloadsClass} onClick={ () => this.openTitle('downloads') }>
                     <h3>Downloads and Installation</h3>
                 </div>
                 { downloadsOpened && <Downloads /> }
                 <br />
                 <hr className="setup-line" />
                 {/* COMPONENT BREAK */}
-                <div className="ideprojstruct" onClick={ () => this.openTitle('ideprojstruct') }>
+                <div className={this.state.ideprojstructClass} onClick={ () => this.openTitle('ideprojstruct') }>
                     <h3>IDE and Project Structure</h3>
                 </div>
                 { ideprojstructOpened && <IDEProjectStructure /> }
+                <br />
+                <hr className="setup-line" />
+                {/* COMPONENT BREAK */}
+                <div className={this.state.conceptsClass} onClick={ () => this.openTitle('concepts') }>
+                    <h3>Additional Concepts</h3>
+                </div>
+                { conceptsOpened && <Concepts /> }
                 <br />
                 <hr className="setup-line" />
             </div>

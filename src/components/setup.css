@@ -19,7 +19,7 @@
     height: 6px;
     border: 0;
 }
-
+/* HIGHER UP COMPONENTS */
 .download {
     width: 330px;
     height: 10px;
@@ -27,6 +27,13 @@
 }
 
 .download:hover {
+    cursor: pointer;
+    background: rgba(37, 92, 153, 0.3);
+}
+
+.download-open {
+    width: 330px;
+    height: 10px;
     cursor: pointer;
     background: rgba(37, 92, 153, 0.3);
 }
@@ -42,11 +49,38 @@
     background: rgba(241, 143, 1, 0.8);
 }
 
+.ideprojstruct-open {
+    width: 310px;
+    height: 10px;
+    cursor: pointer;
+    background: rgba(241, 143, 1, 0.8);
+}
+
+.concepts {
+    width: 270px;
+    height: 10px;
+    background: rgba(240, 93, 94, 0.2);
+}
+
+.concepts:hover {
+    cursor: pointer;
+    background: rgba(240, 93, 94, 0.8);
+}
+
+.concepts-open {
+    width: 270px;
+    height: 10px;
+    cursor: pointer;
+    background: rgba(240, 93, 94, 0.8);
+}
+
+/* HIGHER CONCEPTS */
+
 .download-line {
     color: #255C99;
     background-color: #255C99;
     margin-left: 30px;
-    width: 130px;
+    width: 160px;
     height: 3px;
     border: 0;
 }
@@ -55,7 +89,16 @@
     color: #F18F01;
     background-color: #F18F01;
     margin-left: 30px;
-    width: 110px;
+    width: 160px;
+    height: 3px;
+    border: 0;
+}
+
+.concepts-line {
+    color: #F05D5E;
+    background-color: #F05D5E;
+    margin-left: 20px;
+    width: 150px;
     height: 3px;
     border: 0;
 }
@@ -86,11 +129,11 @@
     margin: auto;
     position: absolute;
     left: 50%;
-    top: -5px;
+    top: 10px;
     transform: translateX(-50%);
     background: rgba(245, 237, 240, 1);
-    width: 103%;
-    height: 100%;
+    width: 115%;
+    height: 88%;
     z-index: -1;
 }
 

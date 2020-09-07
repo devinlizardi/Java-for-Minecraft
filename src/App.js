@@ -18,10 +18,10 @@ class App extends React.Component {
                 <div>
                     <div className="header">
                         <Link to="/" id="header-title"><h1>lizard learning</h1></Link>
-                        <Link to="/setup" className="header-link">Setup</Link> |
-                        <Link to="/" className="header-link"> OOP</Link> | 
-                        <Link to="/" className="header-link"> Java Syntax</Link> | 
-                        <Link to="/" className="header-link"> Continuing</Link>
+                        <Link to="/" className="header-link"> Intro </Link> |
+                        <Link to="/setup" className="header-link"> Getting Started </Link> |
+                        <Link to="/" className="header-link"> Tutorial </Link> | 
+                        <Link to="/" className="header-link"> Examples </Link>
                     </div>
                     <br />
                     <hr className="header-line" />
