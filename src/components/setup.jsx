@@ -12,7 +12,7 @@ class Setup extends React.Component {
         super(props);
         this.state = {
             downloadsOpened : true,
-            downloadsClass : 'download',
+            downloadsClass : 'download-open',
 
             ideprojstructOpened : false,
             ideprojstructClass : 'ideprojstruct',

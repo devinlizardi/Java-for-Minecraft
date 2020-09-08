@@ -1,34 +1,44 @@
 #header-title {
   text-decoration: none;
   color: black;
+  font-size: 80%;
 }
 
 .header {
-    margin: auto;
-    background: #7CC2B5;
-    width: 325px;
-    text-align: center;
-    position: relative;
-    line-height: 70%;
-  }
+  position: relative;
+  left: 50%;
+  margin-left: -380px;
+  margin-top: 30px;
+  background: #7CC2B5;
+  width: 300px;
+  text-align: left;
+  line-height: 70%;
+  padding-left: 10px;
+}
 
-  .header-link:link {
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    opacity: 80%;
-  }
+.header-link:link {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 80%;
+}
 
-  .header-link:hover {
-    font-weight: 600;
-    opacity: 100%;
-  }
+.header-link:hover {
+  font-weight: 600;
+  opacity: 100%;
+}
 
-  .header-link:visited {
-    color: black;
-  }
+.header-link:visited {
+  color: black;
+}
 
-  .header-line {
-      width: 400px;
-      margin: auto;
-  }
+.header-line {
+  width: 700px;
+  height: 2px;
+  position: relative;
+  left: 0%;
+  border: 0;
+  color: burlywood;
+  background: burlywood;
+  opacity: 0.5;
+}

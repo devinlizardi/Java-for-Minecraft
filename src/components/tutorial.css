@@ -1,3 +1,72 @@
 .tutorial {
-    color: rebeccapurple;
+    font-size: large;
+}
+
+.sidenav {
+    z-index: -1;
+    width: 200px;
+    height: 600px;
+    position: fixed;
+    margin-left: 80px;
+    margin-top: 20px;
+    background: rgba(124, 194, 181, 0.3);
+}
+
+.curlybrace {
+    position: absolute;
+    left: -68px;
+}
+
+#javabrace {
+    width: 80px;
+    height: 150px;
+}
+
+.content {
+    margin-left: 25px;
+    text-align: left;
+    font-size: normal;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.content p {
+    opacity: 0.8;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.closed {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: larger;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.content p:hover {
+    opacity: 1;
+    font-weight: 450;
+}
+
+.sidenav-line {
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: #A882DD;
+    background-color: #A882DD;
+    margin-left: 17px;
+    border: 0;
+    height: 2px;
+}
+
+.shorter {
+    width: 30px;
+}
+
+.longer {
+    width: 40px;
+}
+
+.longest {
+    width: 80px;
 }
