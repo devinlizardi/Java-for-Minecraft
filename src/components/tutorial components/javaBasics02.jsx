@@ -3,7 +3,7 @@ import './javaBasics.css';
 
 function JavaBasics02(props) {
     return <div className="text-content-base">
-                <h2> OOP Basics </h2>
+                <h1><em>OOP BASICS</em></h1>
             </div>
 }
 

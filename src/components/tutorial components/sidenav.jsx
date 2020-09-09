@@ -28,7 +28,7 @@ class Sidenav extends React.Component {
             <div className="sidenav">
                 {this.state.javaOpened && <img id="javabrace" className="curlybrace" src={CurlyIcon}/>}
                 <SectionTitle customClickEvent={this.switchSection.bind(this)} name="javabasics" title="Java Basics" />
-                {this.state.javaOpened && <JavaBasicsOpen openSection={this.props.openSection} />}
+                {this.state.javaOpened && <JavaBasicsOpen pageOpen={this.props.pageOpen} openSection={this.props.openSection} />}
 
                 <SectionTitle customClickEvent={this.switchSection.bind(this)} name="forgemdk" title="Forge MDK" />
                 {this.state.forgemdkOpened && <ForgeMDKOpen />}
@@ -46,17 +46,20 @@ function SectionTitle(props) {
 }
 
 function JavaBasicsOpen(props) {
-    const {openSection} = props;
+    const {openSection, pageOpen} = props;
     return <div className="content">
                 <em> 
-                    <p onClick={() => openSection("java01")}>{">"} Hello World <hr className="sidenav-line shorter"/> </p>                   
-                    <p onClick={() => openSection("java02")}>{">"} OOP Basics <hr className="sidenav-line longer"/> </p>                    
-                    <p>{">"} Subclasses <hr className="sidenav-line longest" /> </p>
+                    <p onClick={() => openSection("java01", "java")}>{">"} Hello World
+                             {pageOpen==="java01" && <hr className="sidenav-line shorter"/>} </p>                   
+                    <p onClick={() => openSection("java02", "java")}>{">"} OOP Basics 
+                            {pageOpen==="java02" && <hr className="sidenav-line longer"/>} </p>                    
+                    <p>{">"} Subclasses 
+                    {pageOpen==="subclasses" && <hr className="sidenav-line longest" />} </p>
                 </em>
             </div>
 }
 
-function ForgeMDKOpen() {
+function ForgeMDKOpen(props) {
     return <div className="content">
                 <em> 
                     <p>{">"} mods.toml <hr className="sidenav-line shorter"/> </p>                   

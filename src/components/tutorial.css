@@ -3,11 +3,12 @@
 }
 
 .sidenav {
-    z-index: -1;
+    z-index: 1;
     width: 200px;
     height: 600px;
-    position: fixed;
-    margin-left: 80px;
+    position: absolute;
+    left: 50%;
+    margin-left: -550px;
     margin-top: 20px;
     background: rgba(124, 194, 181, 0.3);
 }
@@ -69,4 +70,26 @@
 
 .longest {
     width: 80px;
+}
+
+.rollingline {
+    position: absolute;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -300px;
+    margin-bottom: 0;
+    width: 75px;
+    height: 12px;
+    background: red;
+    border: 0;
+}
+
+.rollingtitle {
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 110px;
+    margin-top: 0;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

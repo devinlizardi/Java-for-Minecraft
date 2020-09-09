@@ -1,5 +1,41 @@
 .text-content-base {
     position: absolute;
     left: 50%;
-    margin-left: -200px;
+    top: 120px;
+    margin-left: -300px;
+}
+
+.text-content {
+    width: 90%;
+    margin-left: -20px;
+}
+
+.text-content a {
+    text-decoration: none;
+}
+
+.code-breakdown {
+    padding-left: 40px;
+    font-size: 90%;
+    width: 80%;
+}
+
+.code-text {
+    position: relative;
+    left: 100px;
+    width: fit-content;
+    color: rgb(92, 92, 92);
+    font-size: 105%;
+    font-family: 'Source Code Pro';
+    margin: 5px;
+    padding: 5px;
+    border-left: solid red;
+    border-left-width: 3px;
+    background: rgba(220, 220, 220, 0.2);
+}
+
+.inline-code {
+    font-family: 'Source Code Pro';
+    position: relative;
+    color: rgb(92, 92, 92);
 }

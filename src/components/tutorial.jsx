@@ -10,18 +10,22 @@ class Tutorial extends React.Component {
     constructor(props) {
         super (props);
         this.state = {
-            pageOpen : "",
+            pageOpen : "java01",
+            sectionOpen : "java"
         }
     }
 
-    openSection(name) {
-        this.setState({ pageOpen : name, })
+    openSection(name, section) {
+        this.setState({ pageOpen : name, sectionOpen : section})
     }
 
     render() {
         return(
             <div className="tutorial">
-                <Sidenav openSection={this.openSection.bind(this)} />
+                <Sidenav openSection={this.openSection.bind(this)} pageOpen={this.state.pageOpen} />
+                {this.state.sectionOpen === "java" ? 
+                <div><span className="rollingline" /> <br /> <h5 className="rollingtitle">Java Basics</h5></div>
+                    : null}
                 {this.state.pageOpen === "java01" ? <JavaBasics01 /> : null}
                 {this.state.pageOpen === "java02" ? <JavaBasics02 /> : null}
             </div>
