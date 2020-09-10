@@ -1,6 +1,8 @@
 import React from 'react';
 import './javaBasics.css';
 
+import Q1 from './question1.jsx';
+
 function JavaBasics01(props) {
     return <div className="text-content-base">
                 <h1><em>HELLO WORLD</em></h1>
@@ -28,8 +30,10 @@ function JavaBasics01(props) {
                     An integer is one of the seven Primitive Types of variables in Java, and that's why we refer to it with
                     a lowercase 'L.' If we wanted to make a variable of a more complex type, like a <span className="inline-code">String</span>,
                     then we use capital first letters. Here let's make a String we can use to build our Hello World program:
-                        <p className="code-text"> String first_half = "Hello"; </p>
-                    Wonderful!
+                        <p className="code-text"> String first_half = "Hello"; </p> <br />
+                    Wonderful! Let's play with some variables and check comprehension. <br /> <br />
+                    <Q1 />
+                    <br /><br /><br />
                 </p>
             </div>
 }

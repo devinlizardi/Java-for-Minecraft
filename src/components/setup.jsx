@@ -56,29 +56,27 @@ class Setup extends React.Component {
                 <div className={this.state.downloadsClass} onClick={ () => this.openTitle('downloads') }>
                 <h3>Downloads and Installation</h3>
                 </div>
-                <CSSTransitionGroup transitionName="example">
+                <CSSTransitionGroup transitionName="example" in={downloadsOpened}>
                     { downloadsOpened && <Downloads /> }
-                    <br />
-                    <hr className="setup-line" />
                 </CSSTransitionGroup>
-
+                <br />
+                <hr className="setup-line" />
                 <div className={this.state.ideprojstructClass} onClick={ () => this.openTitle('ideprojstruct') }>
                     <h3>IDE and Project Structure</h3>
                 </div>
                 <CSSTransitionGroup transitionName="example">
                     { ideprojstructOpened && <IDEProjectStructure /> }
-                    <br />
-                    <hr className="setup-line" />
                 </CSSTransitionGroup>
-
+                <br />
+                <hr className="setup-line" />
                 <div className={this.state.conceptsClass} onClick={ () => this.openTitle('concepts') }>
                     <h3>Additional Concepts</h3>
                 </div>
                 <CSSTransitionGroup transitionName="example">
                     { conceptsOpened && <Concepts /> }
-                    <br />
-                    <hr className="setup-line" />
                 </CSSTransitionGroup>
+                <br />
+                <hr className="setup-line" />
             </div>
         )
     }

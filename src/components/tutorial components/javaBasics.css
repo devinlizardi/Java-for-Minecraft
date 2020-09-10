@@ -1,13 +1,18 @@
 .text-content-base {
     position: absolute;
     left: 50%;
-    top: 120px;
+    top: 110px;
     margin-left: -300px;
 }
 
 .text-content {
     width: 90%;
     margin-left: -20px;
+    margin-top: -20px;
+    padding: 5px;
+    padding-left: 15px;
+    background: rgba(218, 217, 190, 0.1);
+    border-left: 3px solid rgba(124, 194, 181, 0.151);
 }
 
 .text-content a {
@@ -38,4 +43,43 @@
     font-family: 'Source Code Pro';
     position: relative;
     color: rgb(92, 92, 92);
+}
+
+.question-block {
+    position: relative;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+    background: rgba(219, 219, 219, 0.904);
+    width: 700px;
+    color: black;
+}
+
+.question-code {
+    color: rgb(92, 92, 92);
+    background: white;
+    width: fit-content;
+    font-family: 'Source Code Pro';
+    padding: 5px;
+    margin: 2px;
+    margin-left: 20px;
+    border-left: solid blue;
+    border-left-width: 3px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 95%;
+}
+
+.answers ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid black;
 }
