@@ -8,7 +8,7 @@ import JavaBasics02 from './tutorial components/javaBasics02.jsx';
 
 class Tutorial extends React.Component {
     constructor(props) {
-        super (props);
+        super(props);
         this.state = {
             pageOpen : "java01",
             sectionOpen : "java"

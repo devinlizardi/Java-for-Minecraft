@@ -5,7 +5,7 @@ import Downloads from './downloadsInstallation.jsx';
 import IDEProjectStructure from './ideProjectStructure.jsx';
 import Concepts from './concepts.jsx';
 
-import { CSSTransitionGroup } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 
 class Setup extends React.Component {
     constructor(props) {
@@ -46,6 +46,8 @@ class Setup extends React.Component {
                                         ? 'concepts-open' : 'concepts',
                 });
                 break;
+            default:
+                break;
         }
     }
 
@@ -56,25 +58,25 @@ class Setup extends React.Component {
                 <div className={this.state.downloadsClass} onClick={ () => this.openTitle('downloads') }>
                 <h3>Downloads and Installation</h3>
                 </div>
-                <CSSTransitionGroup transitionName="example" in={downloadsOpened}>
-                    { downloadsOpened && <Downloads /> }
-                </CSSTransitionGroup>
+                <CSSTransition in={downloadsOpened} timeout={500} classNames="example" unmountOnExit>
+                    <Downloads />
+                </CSSTransition>
                 <br />
                 <hr className="setup-line" />
                 <div className={this.state.ideprojstructClass} onClick={ () => this.openTitle('ideprojstruct') }>
                     <h3>IDE and Project Structure</h3>
                 </div>
-                <CSSTransitionGroup transitionName="example">
-                    { ideprojstructOpened && <IDEProjectStructure /> }
-                </CSSTransitionGroup>
+                <CSSTransition in={ideprojstructOpened} timeout={500} classNames="example" unmountOnExit>
+                    <IDEProjectStructure />
+                </CSSTransition>
                 <br />
                 <hr className="setup-line" />
                 <div className={this.state.conceptsClass} onClick={ () => this.openTitle('concepts') }>
                     <h3>Additional Concepts</h3>
                 </div>
-                <CSSTransitionGroup transitionName="example">
-                    { conceptsOpened && <Concepts /> }
-                </CSSTransitionGroup>
+                <CSSTransition in={conceptsOpened} timeout={500} classNames="example" unmountOnExit>
+                    <Concepts />
+                </CSSTransition>
                 <br />
                 <hr className="setup-line" />
             </div>

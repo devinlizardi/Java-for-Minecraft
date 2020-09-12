@@ -71,10 +71,10 @@
     display: flex;
     flex-direction: column;
     background: white;
-    width: 95%;
+    width: 75%;
 }
 
-.answers ul {
+.ans-title {
     margin: 0;
     padding: 0;
     padding-left: 10px;
@@ -82,4 +82,41 @@
     display: flex;
     justify-content: flex-start;
     border-bottom: 2px solid black;
+}
+
+.ans-title-vis {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid black;
+}
+
+.ans-title:hover {
+    background-color: gainsboro;
+}
+
+.correct {
+    background: rgba(0, 128, 0, 0.247);
+}
+
+.incorrect {
+    background: rgba(255, 0, 0, 0.205);
+}
+
+/* CSSTransitions */
+.dropdown {
+    width: 100%;
+    overflow: hidden;
+}
+
+.answer-dropdown-enter {
+    transform: translateY(-50%);
+}
+
+.answer-dropdown-enter-active {
+    transform: translateY(0%);
+    transition: all 100ms ease;
 }

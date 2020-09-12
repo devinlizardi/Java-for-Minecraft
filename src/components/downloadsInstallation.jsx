@@ -32,16 +32,16 @@ class DownloadsInstallation extends React.Component {
                     We'll need to download three things to get started
                     <br />
                     <div id="dl-links">
-                        <a className="intext-link" target="_blank"
+                        <a className="intext-link" target="_blank" rel="noopener noreferrer"
                         href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html"> 
                         Java 8 JDK </a> <br />
-                        <a className="intext-link" target="_blank"
+                        <a className="intext-link" target="_blank" rel="noopener noreferrer"
                         href="https://files.minecraftforge.net/"> 
                         Forge MDK </a> <br />
-                        <a className="intext-link" target="_blank"
+                        <a className="intext-link" target="_blank" rel="noopener noreferrer"
                         href="https://www.jetbrains.com/idea/download/#section=windows">
                              IntelliJ Community IDE </a> 
-                            (or <a className="intext-link" target="_blank" 
+                            (or <a className="intext-link" target="_blank" rel="noopener noreferrer"
                             href="https://www.eclipse.org/downloads/">
                                  Eclipse </a> if you prefer) <br />
                     </div> <br />

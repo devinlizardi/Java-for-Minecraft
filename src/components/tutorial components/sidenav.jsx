@@ -20,13 +20,15 @@ class Sidenav extends React.Component {
             case "forgemdk":
                 this.setState({ forgemdkOpened : !this.state.forgemdkOpened, });
             break;
+            default:
+                break;
         };
     }
 
     render() {
         return (
             <div className="sidenav">
-                {this.state.javaOpened && <img id="javabrace" className="curlybrace" src={CurlyIcon}/>}
+                {this.state.javaOpened && <img id="javabrace" className="curlybrace" src={CurlyIcon} alt="curly brace for fun"/>}
                 <SectionTitle customClickEvent={this.switchSection.bind(this)} name="javabasics" title="Java Basics" />
                 {this.state.javaOpened && <JavaBasicsOpen pageOpen={this.props.pageOpen} openSection={this.props.openSection} />}
 

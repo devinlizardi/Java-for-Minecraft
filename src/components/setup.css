@@ -153,21 +153,21 @@
     font-size: 115%;
     line-height: 50%;
 }
-/* CSSTransition classes */
+/* CSSTransitionGroup classes */
 .example-enter {
     opacity: 0.01;
   }
   
-.example-enter.example-enter-active {
+.example-enter-active {
     opacity: 1;
     transition: all 100ms ease-in;
 }
   
-.example-leave {
+.example-exit {
     opacity: 1;
 }
 
-.example-leave.example-leave-active {
+.example-exit-active {
     opacity: 0.01;
     transition: all 200ms ease-in;
 }

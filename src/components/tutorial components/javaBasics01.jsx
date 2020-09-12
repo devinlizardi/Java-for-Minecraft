@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './javaBasics.css';
 
 import Q1 from './question1.jsx';
@@ -6,7 +6,7 @@ import Q1 from './question1.jsx';
 function JavaBasics01(props) {
     return <div className="text-content-base">
                 <h1><em>HELLO WORLD</em></h1>
-                <p className="text-content">
+                <div className="text-content">
                     Let's write a variation of the basic "Hello World" program and get a sense of 
                     what Java syntax looks like. This is built on fundamental concepts like variables and
                     knowing what "printing to a console" means. <a href="#"> Here's some info on that if you need. </a>
@@ -34,7 +34,7 @@ function JavaBasics01(props) {
                     Wonderful! Let's play with some variables and check comprehension. <br /> <br />
                     <Q1 />
                     <br /><br /><br />
-                </p>
+                </div>
             </div>
 }
 

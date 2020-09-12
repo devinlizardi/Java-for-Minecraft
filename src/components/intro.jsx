@@ -7,9 +7,8 @@ class Intro extends React.Component {
         <div className="intro">
             <h3>How to use this Guide</h3>
             <hr id="coding-line" className="intro-line" />
-            <p>
-                <div className="intro-background"></div>
-                This guide is meant for new programmers, and should hopefully get you into modding Minecraft
+            <div>
+                <p>This guide is meant for new programmers, and should hopefully get you into modding Minecraft
                 and learning about Java.
                 <br /> <br />
                 I recommend using this guide like this: <br /> <br />
@@ -25,30 +24,30 @@ class Intro extends React.Component {
                 </span> <br /> <br />
                 Getting into coding can take awhile, and at first it'll likely feel like there's no way
                 to figure this out on your own. Thankfully, nobody does! Everything on this guide came from some
-                help, I highly recommend checking out the tutorials and resources I used below.
-            </p>
+                help, I highly recommend checking out the tutorials and resources I used below. </p>
+            </div>
             <br />
             <h3>Where to Start</h3>
             <hr className="intro-line" />
-            <p>
-                <div className="intro-background"></div>
+            <div>
+                <p>
                 The Getting Started section covers setting up your computer to run Java and start editing
                 some code. <br /> <br />
                 There are also sections you can click through to learn more about how the code-editing software
                 we're using works, in case there's something like "refactor" or "run the client" you're confused
                 on how to do. <br /> <br />
                 Finally, there's some reference for additional concepts that won't be touched on too much in the
-                tutorial, in case something confuses you or you're interested in more.
-            </p>
+                tutorial, in case something confuses you or you're interested in more. </p>
+            </div>
             <br />
             <h3>Credits / Resources</h3>
             <hr className="intro-line" />
-            <p>
-                <div className="intro-background"></div>
+            <div>
+                <p>
                 This tutorial series is built on resources of others in the modding community, I am
                 nothing without them. Here's some links to the main documentation, videos, and other tutorial
-                series I highly recommend you look at as well.
-            </p>
+                series I highly recommend you look at as well. </p>
+            </div>
         </div>)
     }
 }
