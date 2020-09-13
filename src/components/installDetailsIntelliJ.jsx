@@ -6,7 +6,6 @@ class InstallDetailsIntelliJ extends React.Component {
     render() {
         return (
             <div className="details-opened">
-                <div className="detail-background"/>
                 <b className="details-opened-title">IntelliJ IDE</b>
                 <p>
                     IntelliJ is an Integrated Development Environment (IDE), that's essentially a super-fancy

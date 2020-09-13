@@ -2,7 +2,7 @@
     font-size: large;
     margin: auto;
     width: 800px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .setup h3 {
@@ -126,26 +126,11 @@
     background: rgba(245, 237, 240, 0.3);
 }
 
-.detail-background {
-    margin: auto;
-    position: absolute;
-    left: 50%;
-    top: 10px;
-    transform: translateX(-50%);
-    background: rgba(245, 237, 240, 1);
-    width: 115%;
-    height: 88%;
-    z-index: -1;
-}
-
 .details-opened {
     position: relative;
-    top: -10px;
-}
-
-.details-opened p {
-    position: relative;
-    top: -10px;
+    background: rgba(0, 38, 255, 0.192);
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .details-opened-title {

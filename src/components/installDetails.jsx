@@ -6,7 +6,6 @@ class InstallDetailsJava extends React.Component {
     render() {
         return (
             <div className="details-opened">
-                <div className="detail-background"/>
                 <b className="details-opened-title">Java 8 JDK</b>
                 <p>
                     We need to install Java before anything else, even if you already have Minecraft installed

@@ -6,7 +6,6 @@ class InstallDetailsForge extends React.Component {
     render() {
         return (
             <div className="details-opened">
-                <div className="detail-background"/>
                 <b className="details-opened-title">Forge 1.15.2 MDK</b>
                 <p>
                     Forge is what most people use to run mods in their games, but what actually is it doing?
