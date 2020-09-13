@@ -33,8 +33,9 @@ function JavaBasics01(props) {
                         <p className="code-text"> String first_half = "Hello"; </p> <br />
                     Wonderful! Let's play with some variables and check comprehension. <br /> <br />
                     <Q1 />
-                    <br /><br /><br />
+                    <br /> <br />
                 </div>
+                <br /> <br />
             </div>
 }
 

@@ -112,15 +112,12 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    transition: height 500ms ease;
 }
 
-.answer-dropdown-enter {
-    height: 120%;
-    transform: translateY(-50%);
+.dropdown-content {
+    height: 0;
 }
 
 .answer-dropdown-enter-active {
-    transform: translateY(0%);
-    transition: all 500ms ease;
+    transition: height 200ms ease;
 }
