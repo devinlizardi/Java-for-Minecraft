@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import '../tutorial.css';
 import CurlyIcon from '../../assets/curlyBraceIcon.svg';
+import HamburgerIcon from '../../assets/customHamIcon.svg';
 
 class Sidenav extends React.Component {
     constructor(props) {
@@ -27,6 +28,7 @@ class Sidenav extends React.Component {
 
     render() {
         return (
+            <div>
             <div className="sidenav">
                 {this.state.javaOpened && <img id="javabrace" className="curlybrace" src={CurlyIcon} alt="curly brace for fun"/>}
                 <SectionTitle customClickEvent={this.switchSection.bind(this)} name="javabasics" title="Java Basics" />
@@ -35,8 +37,21 @@ class Sidenav extends React.Component {
                 <SectionTitle customClickEvent={this.switchSection.bind(this)} name="forgemdk" title="Forge MDK" />
                 {this.state.forgemdkOpened && <ForgeMDKOpen />}
             </div>
+
+            <SideBar />
+            </div>
         )
     }
+}
+
+function SideBar() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    return(
+        <div className="sidebar">
+            <img src={HamburgerIcon} alt="click for menu"/>
+        </div>
+    );
 }
 
 function SectionTitle(props) {

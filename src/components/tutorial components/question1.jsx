@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './javaBasics.css';
 
-import { CSSTransition } from 'react-transition-group';
+import AnswerItem from './answerItem.js';
 
-function Question1(props) {
+function Question1() {
     return(
     <div> 
     <div className="question-block">
@@ -28,7 +28,7 @@ function Question1(props) {
             stress enough how important it is to pay attention to these kinds of details in your code.
             </AnswerItem>
             <AnswerItem ans=">>> Error: Not able to add Strings" value="incorrect">
-            You actually can add strings! 
+            You actually can add strings! (only to other strings though)
             </AnswerItem>
         </div>
     </div>
@@ -68,33 +68,6 @@ function Question1(props) {
         </div>
     </div>
     </div>
-    );
-}
-
-function AnswerItem(props) {
-    const [open, setOpen] = useState(false);
-
-    function calcHeight(el) {
-        const sectionHeight = el.scrollHeight;
-        requestAnimationFrame(() => {
-            el.style.height = sectionHeight + 'px';
-        });
-    }
-
-    return(
-        <div onClick={() => setOpen(true)}>
-            <span className={open ? props.value + " ans-title-vis" : "ans-title"}>{props.ans}</span>
-            <div className={open ? props.value : null}>
-                <div className="dropdown">
-                    <CSSTransition in={open} classNames="answer-dropdown"
-                    timeout={500} unmountOnExit onEnter={calcHeight}>
-                        <div className="dropdown-content" id={0}>
-                            {props.children}
-                        </div>
-                    </CSSTransition>
-                </div>
-            </div>
-        </div>
     );
 }
 

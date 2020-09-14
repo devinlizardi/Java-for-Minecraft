@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './javaBasics.css';
 
 import Q1 from './question1.jsx';
