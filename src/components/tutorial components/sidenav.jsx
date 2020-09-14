@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
-
+import React, {useState, useEffect} from 'react';
 import '../tutorial.css';
+
 import CurlyIcon from '../../assets/curlyBraceIcon.svg';
-import HamburgerIcon from '../../assets/customHamIcon.svg';
+import CurlyBordered from '../../assets/curlyBordered.svg';
 
 class Sidenav extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             javaOpened : true,
-            forgemdkOpened : false,
+            forgemdkOpened : true,
         }
     }
 
@@ -45,18 +45,35 @@ class Sidenav extends React.Component {
 }
 
 function SideBar() {
-    const [menuOpen, setMenuOpen] = useState(false);
+    var width = window.innerWidth;
+    const breakpoint = 1160;
+
+    const handleClick = () => {
+        const sidenavDOM = document.getElementsByClassName('sidenav')[0];
+        sidenavDOM.style.transform = sidenavDOM.style.transform === "translateX(-200%)"
+             ? "translateX(70%)" : "translateX(-200%)";
+    };
+
+    useEffect(() => {
+        const handleWindowResize = () => {
+            width = window.innerWidth;
+            const sidenavDOM = document.getElementsByClassName('sidenav')[0];
+            sidenavDOM.style.transform = width < breakpoint ? "translateX(-200%)" : "translateX(0%)";
+        }
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize)
+    }, []);
 
     return(
-        <div className="sidebar">
-            <img src={HamburgerIcon} alt="click for menu"/>
+        <div className="sidebar" onClick={handleClick}>
+            <img src={CurlyBordered} alt="click for menu"/>
         </div>
     );
 }
 
 function SectionTitle(props) {
-    const { name, title } = props;
-    return <h4 onClick={() => props.customClickEvent(name)} 
+    const { name, title, customClickEvent } = props;
+    return <h4 onClick={() => customClickEvent(name)} 
                 className="content closed">
                 {title}
             </h4>
