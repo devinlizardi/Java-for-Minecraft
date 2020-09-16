@@ -25,6 +25,12 @@
     width: 80%;
 }
 
+.section-title {
+    margin: 0;
+    font-weight: lighter;
+    font-size: x-large;
+}
+
 .code-text {
     position: relative;
     left: 100px;
@@ -83,6 +89,7 @@
     display: flex;
     justify-content: flex-start;
     border-bottom: 2px solid black;
+    cursor: pointer;
 }
 
 .ans-title-vis {
@@ -93,6 +100,7 @@
     display: flex;
     justify-content: flex-start;
     border-bottom: 2px solid black;
+    cursor: default;
 }
 
 .ans-title:hover {
@@ -105,6 +113,13 @@
 
 .incorrect {
     background: rgba(255, 0, 0, 0.205);
+}
+
+.section-divider {
+    margin: auto;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* CSSTransitions */
@@ -120,4 +135,22 @@
 
 .answer-dropdown-enter-active {
     transition: height 200ms ease;
+}
+
+/* IMAGES */
+img {
+    max-width: 600px;;
+    height: auto;
+}
+
+#blockcomp {
+    position: relative;
+    left: 5rem;
+}
+
+/* VOCAB */
+.vocab-attr {
+    color: green;
+    font-style: italic;
+    font-weight: bold;
 }

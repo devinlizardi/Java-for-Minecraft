@@ -46,7 +46,7 @@ class Sidenav extends React.Component {
 
 function SideBar() {
     var width = window.innerWidth;
-    const breakpoint = 1160;
+    const breakpoint = 1300;
 
     const handleClick = () => {
         const sidenavDOM = document.getElementsByClassName('sidenav')[0];

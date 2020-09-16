@@ -13,7 +13,7 @@ function AnswerItem(props) {
 
     return(
         <div onClick={() => setOpen(true)}>
-            <span className={open ? props.value + " ans-title-vis" : "ans-title"}>{props.ans}</span>
+            <span className={open ? props.value + " ans-title-vis" : "ans-title"}><em>{props.ans}</em></span>
             <div className={open ? props.value : null}>
                 <div className="dropdown">
                     <CSSTransition in={open} classNames="answer-dropdown"

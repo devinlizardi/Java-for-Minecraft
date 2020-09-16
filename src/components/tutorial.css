@@ -19,7 +19,8 @@
 .sidebar {
     position: absolute;
     left: 50%;
-    margin-top: -5px;
+    top: 5%;
+    margin-top: -15px;
     margin-left: -410px;
     transform: translateX(30%);
     opacity: 0;
@@ -33,9 +34,10 @@
 
 .sidebar img:hover {
     filter: brightness(200%);
+    cursor: pointer;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1300px) {
     .sidebar {
         transform: translateX(0%);
         opacity: 1;

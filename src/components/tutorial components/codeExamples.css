@@ -1,0 +1,20 @@
+.python-base {
+    position: relative;
+    margin-left: 5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    background-color: aliceblue;
+    border-left: 3px solid blue;
+    color: rgb(70, 70, 70);
+    z-index: 1;
+    width: fit-content;
+    font-family: 'Source Code Pro';
+}
+
+.python-print {
+    font-style: italic;
+}
+
+.python-print .console {
+    color: rgb(167, 167, 167);
+}
