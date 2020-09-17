@@ -83,12 +83,12 @@ function JavaBasicsOpen(props) {
     const {openSection, pageOpen} = props;
     return <div className="content">
                 <em> 
-                    <p onClick={() => openSection("java01", "java")}>{">"} Hello World
-                             {pageOpen==="java01" && <hr className="sidenav-line shorter"/>} </p>                   
-                    <p onClick={() => openSection("java02", "java")}>{">"} OOP Basics 
-                            {pageOpen==="java02" && <hr className="sidenav-line longer"/>} </p>                    
-                    <p>{">"} Subclasses 
-                    {pageOpen==="subclasses" && <hr className="sidenav-line longest" />} </p>
+                    <p onClick={() => openSection("java01", "java")}>{">"} Hello World </p> 
+                             {pageOpen==="java01" && <hr className="sidenav-line shorter"/>}                  
+                    <p onClick={() => openSection("java02", "java")}>{">"} OOP Basics </p> 
+                            {pageOpen==="java02" && <hr className="sidenav-line longer"/>}                    
+                    <p>{">"} Subclasses </p>
+                    {pageOpen==="subclasses" && <hr className="sidenav-line longest" />} 
                 </em>
             </div>
 }
@@ -96,8 +96,8 @@ function JavaBasicsOpen(props) {
 function ForgeMDKOpen(props) {
     return <div className="content">
                 <em> 
-                    <p>{">"} mods.toml <hr className="sidenav-line shorter"/> </p>                   
-                    <p>{">"} @mod config <hr className="sidenav-line longest"/> </p>                    
+                    <p>{">"} mods.toml  </p> <hr className="sidenav-line shorter"/>                  
+                    <p>{">"} @mod config  </p>  <hr className="sidenav-line longest"/>                   
                 </em>
             </div>
 }
