@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import '../tutorial.css';
 
 import CurlyIcon from '../../assets/curlyBraceIcon.svg';
 import CurlyBordered from '../../assets/curlyBordered.svg';
+import UnderlineAnim from './underlineAnim.js';
 
 class Sidenav extends React.Component {
     constructor(props) {
@@ -84,11 +85,13 @@ function JavaBasicsOpen(props) {
     return <div className="content">
                 <em> 
                     <p onClick={() => openSection("java01", "java")}>{">"} Hello World </p> 
-                             {pageOpen==="java01" && <hr className="sidenav-line shorter"/>}                  
+                    {pageOpen==="java01"} <UnderlineAnim open={pageOpen==="java01"} length="sidenav-line shorter"/>
+
                     <p onClick={() => openSection("java02", "java")}>{">"} OOP Basics </p> 
-                            {pageOpen==="java02" && <hr className="sidenav-line longer"/>}                    
-                    <p>{">"} Subclasses </p>
-                    {pageOpen==="subclasses" && <hr className="sidenav-line longest" />} 
+                    {pageOpen==="java02"} <UnderlineAnim open={pageOpen==="java02"} length="sidenav-line longer" />
+
+                    <p onClick={() => openSection("java03", "java")}>{">"} Subclasses </p>
+                    {pageOpen==="java03"} <UnderlineAnim open={pageOpen==="java03"}  length="sidenav-line longest" />
                 </em>
             </div>
 }

@@ -3,6 +3,7 @@ import './javaBasics.css';
 
 import Q1 from './question1.jsx';
 import Q1_a from './question1a';
+import Q1_b from './question1b';
 
 function JavaBasics01(props) {
     return <div className="text-content-base">
@@ -50,7 +51,42 @@ function JavaBasics01(props) {
                     <Q1_a />
                     <p>
                         This is what coding is all about; setting up variables that we can use to represent something like an x-position,
-                        then <em> changing </em> them based on a condition we set
+                        then <em> changing </em> them based on a condition we set. This brings us to functions!
+                        <br /> <br />
+                        Think of functions like a re-usable machine we get to make; they (sometimes) ask for some piece of information in the form of a
+                        variable, do something with that info, and give us back something new. Note that functions are pieces of our code
+                        that don't actually do anything until we use them. Here's a simple example to breakdown this concept.
+                        <br />
+                    </p>
+                    <div className="code-text">
+                        int add_numbers(int num1, int num2) {'{'} <br />
+                        &nbsp;&nbsp; int result = num1 + num2; <br />
+                        &nbsp;&nbsp; return result; <br />
+                        {'}'}
+                    </div>
+                    <br />
+                    <div className="code-breakdown">
+                        {'>'} <span className="inline-code">int</span> here fills in the same variable formula as above, it tells
+                        Java that this function is going to give us back an integer.<br /><br/>
+                        {'>'} <span className="inline-code">add_numbers</span> is the name of our function, similar to how 
+                        variables have names. <br/><br/>
+                        {'>'} <span className="inline-code">(int num1, int num2)</span> is where the function asks for the info it needs
+                        in order to do it's thing. Inside these parantheses we declare we need two integers, and we put them in variables called
+                        num1 and num2 respectively. <br /><br/>
+                        {'>'} <span className="inline-code">int result = num1 + num2;</span> This code declares a new variable called result, and
+                        the value of this variable is evaluated to be the sum of the two integers we asked for before. <br /><br/>
+                        {'>'} <span className="inline-code">return result;</span> This sends back the result variable so we can grab it later.
+                        Note that because we <em> return </em> the result variable it's type must match the one we declared at the very beginning
+                        of our function.
+                    </div>
+                    <p>
+                        Fantastic! If you feel good about understanding some of this function syntax explore this question
+                        below.
+                    </p>
+                    <Q1_b />
+                    <p>
+                        If you've gotten this far you've done fantastic work and you're almost done with this section.
+                        Here are a few questions you can think about and when you feel good about move on: <br />
                     </p>
                 </div>
                 <br /> <br />
