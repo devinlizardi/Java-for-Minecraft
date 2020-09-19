@@ -23,11 +23,23 @@ class Tutorial extends React.Component {
         return(
             <div className="tutorial">
                 <Sidenav openSection={this.openSection.bind(this)} pageOpen={this.state.pageOpen} />
+
                 {this.state.sectionOpen === "java" ? 
-                <div><span className="rollingline" /> <br /> <h5 className="rollingtitle">Java Basics</h5></div>
-                    : null}
-                {this.state.pageOpen === "java01" ? <JavaBasics01 /> : null}
-                {this.state.pageOpen === "java02" ? <JavaBasics02 /> : null}
+                    <div>
+                        <span className="rollingline" /> <br /> 
+                        <h5 className="rollingtitle">Java Basics</h5>
+                        {this.state.pageOpen === "java01" ? <JavaBasics01 /> : null}
+                        {this.state.pageOpen === "java02" ? <JavaBasics02 /> : null}
+                    </div>
+                : null}
+
+                {this.state.sectionOpen === "forge" ? 
+                    <div>
+                        <span className="rollingline forge" /> <br /> 
+                        <h5 className="rollingtitle">Forge MDK</h5>
+                        {this.state.pageOpen === "forge01" ? null : null}
+                    </div>
+                : null}
             </div>
         )
     }

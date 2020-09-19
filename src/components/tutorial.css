@@ -1,19 +1,27 @@
 .tutorial {
-    font-size: large;
+    font-size: 120%;
 }
 
 .sidenav {
     display: block;
     z-index: 10;
     width: 200px;
-    height: 600px;
+    height: auto;
     position: fixed;
     left: 50%;
     margin-left: -620px;
     margin-top: 20px;
     transform: translateX(0%);
-    transition: transform 1s ease;
-    background: rgb(195, 243, 234);
+    transition: all 1s ease;
+    font-size: 110%;
+}
+
+.sidenav-BG {
+    position: absolute;
+    left: -3rem;
+    width: 15rem;
+    height: 115%;
+    transition: height 1s ease;
 }
 
 .sidebar {
@@ -54,8 +62,10 @@
     height: 150px;
 }
 
+/* SIDENAV TEXT */
+
 .content {
-    margin-left: 25px;
+    margin-left: 0;
     text-align: left;
     font-size: normal;
     opacity: 0.8;
@@ -68,17 +78,22 @@
     margin-bottom: 5px;
 }
 
+.content p:hover {
+    opacity: 1;
+    font-weight: 450;
+    color: #EB5E55;
+}
+
+.content .opened {
+    color: #EB5E55;
+}
+
 .closed {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: larger;
     font-weight: normal;
     cursor: pointer;
-}
-
-.content p:hover {
-    opacity: 1;
-    font-weight: 450;
 }
 
 .sidenav-line {
@@ -103,6 +118,7 @@
     width: 80px;
 }
 
+/* SECTION TITLES */
 .rollingline {
     position: absolute;
     left: 50%;
@@ -123,6 +139,10 @@
     margin-top: 0;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rollingline.forge{
+    background-color: rgb(25, 133, 91);
 }
 
 /* CSSTransitions */
