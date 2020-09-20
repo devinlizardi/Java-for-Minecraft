@@ -21,6 +21,10 @@
     left: -3rem;
 }
 
+.sidenav-BG .back-rect{
+    transition: all 2s ease;
+}
+
 .sidebar {
     position: absolute;
     left: 50%;
@@ -52,10 +56,12 @@
 /* CURLY SIDE BRACE */
 .curlybrace {
     position: absolute;
-    left: -68px;
+    transition: all 50ms ease;
 }
 
 .curlybrace.java {
+    top: 0;
+    left: -68px;
     width: 80px;
     height: 150px;
 }
@@ -64,7 +70,14 @@
     top: 9rem;
     left: -60px;
     width: 70px;
-    height: 140px;
+    height: 125px;
+}
+
+.curlybrace.basicitem {
+    top: 16rem;
+    left: -60px;
+    width: 70px;
+    height: 150px;
 }
 
 /* SIDENAV TEXT */
@@ -98,7 +111,6 @@
     margin-bottom: 0;
     font-size: larger;
     font-weight: normal;
-    cursor: pointer;
 }
 
 .sidenav-line {

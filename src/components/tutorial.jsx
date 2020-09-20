@@ -40,6 +40,14 @@ class Tutorial extends React.Component {
                         {this.state.pageOpen === "forge01" ? null : null}
                     </div>
                 : null}
+
+                {this.state.sectionOpen === "basicitem" ? 
+                    <div>
+                        <span className="rollingline basicitem" /> <br /> 
+                        <h5 className="rollingtitle">Basic Item</h5>
+                        {this.state.pageOpen === "basicitem01" ? null : null}
+                    </div>
+                : null}
             </div>
         )
     }
