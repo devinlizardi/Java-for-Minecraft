@@ -19,9 +19,6 @@
 .sidenav-BG {
     position: absolute;
     left: -3rem;
-    width: 15rem;
-    height: 115%;
-    transition: height 1s ease;
 }
 
 .sidebar {
@@ -52,14 +49,22 @@
     }
 }
 
+/* CURLY SIDE BRACE */
 .curlybrace {
     position: absolute;
     left: -68px;
 }
 
-#javabrace {
+.curlybrace.java {
     width: 80px;
     height: 150px;
+}
+
+.curlybrace.forge {
+    top: 9rem;
+    left: -60px;
+    width: 70px;
+    height: 140px;
 }
 
 /* SIDENAV TEXT */

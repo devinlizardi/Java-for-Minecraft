@@ -3,7 +3,7 @@ import '../tutorial.css';
 
 import CurlyIcon from '../../assets/curlyBraceIcon.svg';
 import CurlyBordered from '../../assets/curlyBordered.svg';
-import SideNavSVG from '../../assets/sideNavSVG.js';
+import { ReactComponent as SideNavSVG } from '../../assets/sidenav.svg';
 
 class Sidenav extends React.Component {
     constructor(props) {
@@ -34,9 +34,9 @@ class Sidenav extends React.Component {
     render() {
         return (
             <div>
-            <div className="sidenav">
-                <SideNavSVG />
-                {this.state.javaOpened && <img id="javabrace" className="curlybrace" src={CurlyIcon} alt="curly brace for fun"/>}
+            <div className="sidenav" >
+                <SideNavSVG className="sidenav-BG"/>
+                <HandleBrace sectionOpen={this.props.sectionOpen}/>
 
                 <SectionTitle customClickEvent={this.switchSection.bind(this)} name="javabasics" title="Java Basics" />
                 {this.state.javaOpened && <JavaBasicsOpen pageOpen={this.props.pageOpen} openSection={this.props.openSection} />}
@@ -51,6 +51,14 @@ class Sidenav extends React.Component {
     }
 }
 
+function HandleBrace(props) {
+    const {sectionOpen} = props;
+
+    return (
+        <img className={"curlybrace " + sectionOpen}
+        src={CurlyIcon} alt="curly brace for fun"/>
+    );
+}
 
 function SideBar() {
     var width = window.innerWidth;

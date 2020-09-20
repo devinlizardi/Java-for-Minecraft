@@ -22,7 +22,7 @@ class Tutorial extends React.Component {
     render() {
         return(
             <div className="tutorial">
-                <Sidenav openSection={this.openSection.bind(this)} pageOpen={this.state.pageOpen} />
+                <Sidenav openSection={this.openSection.bind(this)} pageOpen={this.state.pageOpen} sectionOpen={this.state.sectionOpen}/>
 
                 {this.state.sectionOpen === "java" ? 
                     <div>
