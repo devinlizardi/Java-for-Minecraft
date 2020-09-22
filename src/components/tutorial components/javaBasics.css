@@ -144,14 +144,83 @@ img {
     height: auto;
 }
 
+.rounded {
+    width: 25rem;
+    height: auto;
+    border-radius: 20px;
+    border: 5px solid rgb(15, 177, 15);
+    margin-left: 10%;
+    transition: all 100ms ease;
+    box-shadow: 10px -5px rgba(15, 177, 15, 0.219);
+}
+
+.rounded:hover {
+    box-shadow: 20px -10px rgba(15, 177, 15, 0.397);
+}
+
 #blockcomp {
     position: relative;
     left: 5rem;
 }
 
+#blockcomp-desc {
+    position: absolute;
+    left: 38rem;
+    top: 11rem;
+    width: 10rem;
+    font-size: smaller;
+}
+
+.ex-img {
+    display: flex;
+}
+
+.ex-img img {
+    width: 5rem;
+    height: auto;
+    align-self: flex-end;
+}
+
+.ex-img p {
+    margin-left: 2rem;
+}
+
+.instances-box {
+    --main-border-color: rgb(81, 119, 241);
+    --main-bg: rgba(81, 118, 241, 0.315);
+    --main-bg-pre: rgba(81, 118, 241, 0.178);
+    margin-left: 5rem;
+    display: flex;
+    width: fit-content;
+    padding: 0 1rem 0 1rem;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 5px solid var(--main-border-color);
+    box-shadow: 10px -5px var(--main-bg-pre);
+    transition: all 100ms ease;
+}
+
+.instances-box:hover {
+    box-shadow: 20px -10px var(--main-bg);
+}
+
+.instances-box p {
+    width: 20rem;
+}
+
+.instances-box img {
+    margin: 1rem 2rem 1rem 2rem;
+}
+
 /* VOCAB */
 .vocab-attr {
     color: green;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.vocab-inst {
+    color: rgb(81, 119, 241);
     font-style: italic;
     font-weight: bold;
 }

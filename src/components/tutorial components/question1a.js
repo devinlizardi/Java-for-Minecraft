@@ -19,7 +19,7 @@ function Question1A() {
                 {'}'}
             </p>
             <p> Which of the following animations best displays the behavior described above? <br /> <br />
-                Anything inside the <span className="inline-code"> while(true) </span> curly-braces will run in a loop forever, and anything in the
+                Anything inside the <span className="inline-code">while(true)</span> curly-braces will run in a loop forever, and anything in the
                 <span className="inline-code"> if (condition) </span> curly-braces will only happen if that condition is true. For the animation, the x_pos variable represents
                 the x position of the square along the container.
             </p>

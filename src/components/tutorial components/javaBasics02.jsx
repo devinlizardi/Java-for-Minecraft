@@ -1,11 +1,16 @@
 import React from 'react';
 import './javaBasics.css';
 
-import Python from './pythonExample.js';
 import Q2 from './question2';
 import BlockComparison from './../../assets/block_comparison.jpg';
+import PlankJava from './../../assets/plankjava.jpg';
+import CreativeInventory from './../../assets/creative_inv.png';
 
 function JavaBasics02(props) {
+    const classPlankAlt = {
+        altText : "class Plank { / int hardness = 2; / boolean drops_self = true; / double luminanc = 0.0 / ?"
+    };
+
     return <div className="text-content-base">
                 <h1><em>OOP BASICS</em></h1>
                 <div className="text-content">
@@ -30,6 +35,7 @@ function JavaBasics02(props) {
                     <p>Let's look at some Minecraft concepts and get to OOP.</p>
                     <div id="blockcomp">
                         <img src={BlockComparison} alt="Plank / Glowstone / Stone"/>
+                        <p id="blockcomp-desc">Note: I made up these values for example purposes</p>
                     </div>
                     <p>
                         In this diagram we describe 3 <b> different </b> blocks - wooden plank, glowstone, and diamond ore - 
@@ -44,6 +50,58 @@ function JavaBasics02(props) {
                         take these ideas and make them more abstract!
                     </p>
                     <Q2 />
+                    <p>
+                        Great work!! Lets transfer the ideas of Attributes to code and take a look at our first class in Java. <br /> <br />
+                        <b>Note: </b> from this point on the examples of code are going to be images taken from a text-editor as they're
+                        going to become more and more complex, if the images either don't load or you use a screen-reader there is alt-text included, 
+                        or you can contact me for additional support.
+                    </p>
+                    <img className="rounded" src={PlankJava} alt={classPlankAlt.altText}/>
+                    <div className="code-breakdown">
+                        <p>
+                            {'>'} <span className="inline-code"> Class Plank </span> tells Java everything between the curly braces {'{ }'} is
+                            what is inside this class. <br /> <br />
+                            {'>'} <span className="inline-code" > int hardness / boolean drops_self / double luminance </span> These are 
+                            the <span className="vocab-attr"> attributes </span> from before - just defined <em> inside </em> the class so
+                             they have their associated values.<br />
+                        </p>
+                    </div>
+                    <p>
+                        So as you can see because the attributes are contained inside the Plank class you can think of the basic form of a class 
+                        as a group of attributes. Now to actually <em> use </em> this class we need to make an <span className="vocab-inst">instance.</span>
+                    </p>
+                    <hr className="section-divider" />
+                    <h3 className="section-title">Instances</h3>
+                    <p>
+                        Perhaps the most confusing part of OOP is understanding what an <span className="vocab-inst"> instance </span> really is,
+                        but once you do you can really break open Java and start to use it. <br /> <br />
+                        Let's start with a Minecraft example again and work our way to the code.
+                    </p>
+                    <div className="instances-box">
+                        <p>
+                            You've probably seen this inventory before, if you've ever played Creative Mode in Minecraft. <br /> <br />
+                            Let's think about <b> each one of the blocks in this inventory as a class. </b> That means somewhere in our Java code
+                            there's a group of attributes that have the same names, but different values.
+                        </p>
+                        <img src={CreativeInventory} />
+                    </div>
+                    <br />
+                    <div className="instances-box">
+                        <img src={CreativeInventory} />
+                        <p>
+                            When you grab a block from the inventory and drop it in your hotbar below, the <b> block in your hotbar becomes
+                            an <span className="vocab-inst"> instance </span> of that block's class. </b>
+                        </p>
+                    </div>
+                    <br />
+                    <p>
+                        This means a few very important thing about instances: <br />
+                        &nbsp;&nbsp; 1. You can have multiple instances of the same class <br />
+                        &nbsp;&nbsp; 2. Classes do not <em> actually </em> exist anywhere <em> until </em> you actually make an instance of it <br /> <br />
+                        Sometimes it helps to think of classes as templates, and instances are when you actually make something with it. You can
+                        also think of classes as a cookie-cutter, and instances as the actual cookie. I've tried this metaphor a bunch though and 
+                        it can easily be lost so let's stick with Minecraft.
+                    </p>
                 </div>
                 <br /><br /><br /><br /><br />
             </div>

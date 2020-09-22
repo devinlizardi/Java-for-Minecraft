@@ -85,8 +85,7 @@ function JavaBasics01(props) {
                     </p>
                     <Q1_b />
                     <p>
-                        If you've gotten this far you've done fantastic work and you're almost done with this section.
-                        Here are a few questions you can think about and when you feel good about move on: <br />
+                        If you've gotten this far you've done fantastic work and you're almost done with this section! <br />
                     </p>
                 </div>
                 <br /> <br />
