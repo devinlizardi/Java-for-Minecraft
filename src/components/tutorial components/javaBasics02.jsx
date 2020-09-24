@@ -5,13 +5,17 @@ import Q2 from './question2';
 import BlockComparison from './../../assets/block_comparison.jpg';
 import PlankJava from './../../assets/plankjava.jpg';
 import CreativeInventory from './../../assets/creative_inv.png';
+import CreativeGraphic from './../../assets/inventory_instance.jpg';
+import PlankInstance from './../../assets/plankInstanceJava.jpg';
 
 function JavaBasics02(props) {
     const classPlankAlt = {
-        altText : "class Plank { / int hardness = 2; / boolean drops_self = true; / double luminanc = 0.0 / ?"
+        plankAltText : "class Plank { / int hardness = 2; / boolean isDropsSelf = true; / double luminanc = 0.0 / ?",
+        instanceAltText : `public class Main { / public static void main(String[] args) { / Plank myFirstPlank = new Plank();/
+        //myFirstPlank.hardness >>> 2 / }} / class Plank { / int hardness = 2; / boolean isDropsSelf = true; / double luminance = 0.0;/}`,
     };
 
-    return <div className="text-content-base">
+    return (<div className="text-content-base">
                 <h1><em>OOP BASICS</em></h1>
                 <div className="text-content">
                     <h3 className="section-title">Intro</h3>
@@ -44,11 +48,12 @@ function JavaBasics02(props) {
                         <span className="vocab-attr">Attributes </span> are a vocab word for this section; they are variables
                         that describe properties that are shared across similar ideas.
                         <br /> <br />
-                        The <span className="vocab-attr"> hardness, drops_self?, </span> and <span className="vocab-attr"> luminance </span> attribute
+                        The <span className="vocab-attr"> hardness, drops self?, </span> and <span className="vocab-attr"> luminance </span> attribute
                         names are all the same per each block, but <em> values </em> differ between them. Because of this, if I were to describe to
-                        you a Plank all I have to say is that the hardness is 2, the drops_self? is true, and the luminance is 0.0. But we can also 
+                        you a Plank all I have to say is that the hardness is 2, the drops self is true, and the luminance is 0.0. But we can also 
                         take these ideas and make them more abstract!
                     </p>
+                    <p><b> Note: </b> In code we right boolean variables with the word "is" in front, and use the lowerCamelCase style</p>
                     <Q2 />
                     <p>
                         Great work!! Lets transfer the ideas of Attributes to code and take a look at our first class in Java. <br /> <br />
@@ -56,12 +61,12 @@ function JavaBasics02(props) {
                         going to become more and more complex, if the images either don't load or you use a screen-reader there is alt-text included, 
                         or you can contact me for additional support.
                     </p>
-                    <img className="rounded" src={PlankJava} alt={classPlankAlt.altText}/>
+                    <img className="rounded" src={PlankJava} alt={classPlankAlt.plankAltText}/>
                     <div className="code-breakdown">
                         <p>
                             {'>'} <span className="inline-code"> Class Plank </span> tells Java everything between the curly braces {'{ }'} is
                             what is inside this class. <br /> <br />
-                            {'>'} <span className="inline-code" > int hardness / boolean drops_self / double luminance </span> These are 
+                            {'>'} <span className="inline-code" > int hardness / boolean isDropsSelf / double luminance </span> These are 
                             the <span className="vocab-attr"> attributes </span> from before - just defined <em> inside </em> the class so
                              they have their associated values.<br />
                         </p>
@@ -86,8 +91,8 @@ function JavaBasics02(props) {
                         <img src={CreativeInventory} />
                     </div>
                     <br />
-                    <div className="instances-box">
-                        <img src={CreativeInventory} />
+                    <div id="expanding" className="instances-box">
+                        <img id="instance-graphic" src={CreativeGraphic} />
                         <p>
                             When you grab a block from the inventory and drop it in your hotbar below, the <b> block in your hotbar becomes
                             an <span className="vocab-inst"> instance </span> of that block's class. </b>
@@ -101,10 +106,18 @@ function JavaBasics02(props) {
                         Sometimes it helps to think of classes as templates, and instances are when you actually make something with it. You can
                         also think of classes as a cookie-cutter, and instances as the actual cookie. I've tried this metaphor a bunch though and 
                         it can easily be lost so let's stick with Minecraft.
+                        <br /> <br />
+                        Below is some example code that <em> actually works </em> if you want to type it out and give it a try. There are some words
+                        in there we'll cover in the next section, but try and work through what you know and see what you can understand about
+                        what's going on. If you don't know how to run Java code (which is okay it can be confusing), I highly recommend using a 
+                        Java visualizer like <a href="https://cscircles.cemc.uwaterloo.ca/java_visualize/" target="_blank" rel="noopener noreferrer"> this </a> and 
+                        typing it out yourself.
                     </p>
+                    <img src={PlankInstance} className="rounded" id="instance" alt={classPlankAlt.instanceAltText}/>
                 </div>
                 <br /><br /><br /><br /><br />
             </div>
+    );
 }
 
 export default JavaBasics02;

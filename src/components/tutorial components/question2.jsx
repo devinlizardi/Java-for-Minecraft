@@ -16,7 +16,7 @@ function Question2() {
                 Yes... but it won't quite work in code! In Java we need to describe blocks by their attributes,
                     which are essentially just variables.
                 </AnswerItem>
-                <AnswerItem ans="hardness: 1 | drops_self?: false | luminance: 1.0" value="correct">
+                <AnswerItem ans="hardness: 1 | isDropsSelf: false | luminance: 1.0" value="correct">
                     Perfect! The attributes don't include information like "only spawns in nether" or "the texture could
                         be better but at least it's bright," because those aren't variables (at least that we're using).
                 </AnswerItem>
@@ -26,7 +26,7 @@ function Question2() {
         <div className="question-block">
             <p>Let's try working backwards: what block do you think these attributes might describe? This one is okay to guess!
                 <br /> <br />
-                &nbsp;&nbsp;hardness: 50 | drops_self?: true | luminance: 0
+                &nbsp;&nbsp;hardness: 50 | isDropsSelf: true | luminance: 0
             </p>
             <div className="answers">
                 <AnswerItem ans={<ExampleImages title="Diamond Ore" image={DiamondOre}/>} value="incorrect">

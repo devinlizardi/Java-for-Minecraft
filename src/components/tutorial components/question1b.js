@@ -7,7 +7,7 @@ function Question1B() {
         <div className="question-block" >
             <p>First we make our function:</p>
             <p className="question-code">
-                String say_hello(int n) {'{'} <br />
+                String sayHello(int n) {'{'} <br />
                 &nbsp;&nbsp;int i = 0; <br />
                 &nbsp;&nbsp;String result = ""; <br />
                 &nbsp;&nbsp;while (i {'<'} n) {'{'} <br />
@@ -22,7 +22,7 @@ function Question1B() {
                 the variable it asks for.
             </p>
             <p className="question-code">
-                String final_ans = say_hello(5);
+                String finalAnswer = sayHello(5);
             </p>
             <p>
                 What is the value of the variable final_ans?

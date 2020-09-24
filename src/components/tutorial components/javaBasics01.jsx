@@ -36,7 +36,7 @@ function JavaBasics01(props) {
                     An integer is one of the seven Primitive Types of variables in Java, and that's why we refer to it with
                     a lowercase 'L.' If we wanted to make a variable of a more complex type, like a <span className="inline-code">String</span>,
                     then we use capital first letters. Here let's make a String we can use to build our Hello World program:
-                        <br /><br /><span className="code-text"> String first_half = "Hello"; </span> <br /> <br />
+                        <br /><br /><span className="code-text"> String firstHalf = "Hello"; </span> <br /> <br />
                     Wonderful! Let's play with some variables and check comprehension. <br /> <br />
                     </p>
                     <Q1 />
@@ -59,7 +59,7 @@ function JavaBasics01(props) {
                         <br />
                     </p>
                     <div className="code-text">
-                        int add_numbers(int num1, int num2) {'{'} <br />
+                        int addNumbers(int num1, int num2) {'{'} <br />
                         &nbsp;&nbsp; int result = num1 + num2; <br />
                         &nbsp;&nbsp; return result; <br />
                         {'}'}
@@ -68,7 +68,7 @@ function JavaBasics01(props) {
                     <div className="code-breakdown">
                         {'>'} <span className="inline-code">int</span> here fills in the same variable formula as above, it tells
                         Java that this function is going to give us back an integer.<br /><br/>
-                        {'>'} <span className="inline-code">add_numbers</span> is the name of our function, similar to how 
+                        {'>'} <span className="inline-code">addNumbers</span> is the name of our function, similar to how 
                         variables have names. <br/><br/>
                         {'>'} <span className="inline-code">(int num1, int num2)</span> is where the function asks for the info it needs
                         in order to do it's thing. Inside these parantheses we declare we need two integers, and we put them in variables called

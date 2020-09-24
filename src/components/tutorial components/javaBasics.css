@@ -158,6 +158,24 @@ img {
     box-shadow: 20px -10px rgba(15, 177, 15, 0.397);
 }
 
+#instance-graphic {
+    width: 30rem;
+    height: auto;
+    transition: all 100ms ease;
+}
+
+#instance-graphic:hover{
+    width: 40rem;
+    height: auto;
+}
+
+#instance {
+    width: 100%;
+    height: auto;
+}
+
+/* IDK WHAT THIS IS */
+
 #blockcomp {
     position: relative;
     left: 5rem;
@@ -198,6 +216,10 @@ img {
     border: 5px solid var(--main-border-color);
     box-shadow: 10px -5px var(--main-bg-pre);
     transition: all 100ms ease;
+}
+
+#expanding {
+    margin-left: 1rem;
 }
 
 .instances-box:hover {

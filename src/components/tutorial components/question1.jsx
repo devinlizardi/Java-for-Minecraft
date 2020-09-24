@@ -9,9 +9,9 @@ function Question1() {
     <div className="question-block">
         <p> Read the following code, then explore the answers to the question below.</p>
         <p className="question-code">
-            String first_half = "Hello"; <br />
-            String second_half = "World!"; <br />
-            String total = first_half + second_half;
+            String firstHalf = "Hello"; <br />
+            String secondHalf = "World!"; <br />
+            String total = firstHalf + secondHalf;
         </p>
         <p>
             What is the resulting <span className="inline-code">value</span> of the 
@@ -20,8 +20,8 @@ function Question1() {
         <div className="answers">
             <AnswerItem value="incorrect" ans=">>> Hello World!">                    This actually isn't right! This is a 'gotcha' where it's correct
             in that the resulting value is both of the previous values added together,
-            but if you look carefully there's no space between the strings that are first_half and
-            second_half.
+            but if you look carefully there's no space between the strings that are firstHalf and
+            secondHalf.
                 </AnswerItem>
             <AnswerItem value="correct" ans=">>> HelloWorld!">
             Correct! It's a bit of a silly example but I can't

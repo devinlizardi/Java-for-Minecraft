@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .p-background {
   position: absolute;
   left: 50%;
