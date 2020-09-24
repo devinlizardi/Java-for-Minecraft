@@ -8,10 +8,8 @@
     width: 200px;
     height: auto;
     position: fixed;
-    left: 50%;
-    margin-left: -620px;
+    margin-left: 4rem;
     margin-top: 20px;
-    transform: translateX(0%);
     transition: all 1s ease;
     font-size: 110%;
 }
@@ -19,10 +17,15 @@
 .sidenav-BG {
     position: absolute;
     left: -3rem;
+    transition: all 100ms ease;
 }
 
-.sidenav-BG .back-rect{
-    transition: all 2s ease;
+.back-rect{
+    transition: all 100ms ease;
+}
+
+.sidenav:hover .sidenav-BG .back-rect{
+    transform: translateX(-5px) translateY(5px);
 }
 
 .sidebar {

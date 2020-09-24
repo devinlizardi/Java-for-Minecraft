@@ -170,8 +170,14 @@ img {
 }
 
 #instance {
+    border-color: rgb(81, 119, 241);
+    box-shadow: 10px -5px rgba(81, 119, 241, 0.15);
     width: 100%;
     height: auto;
+}
+
+#instance:hover {
+    box-shadow: 20px -10px rgba(81, 119, 241, 0.3);
 }
 
 /* IDK WHAT THIS IS */

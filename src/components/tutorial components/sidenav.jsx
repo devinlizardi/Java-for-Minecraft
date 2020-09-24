@@ -55,9 +55,9 @@ class Sidenav extends React.Component {
 
 function SideNavBG() {
     return(
-        <svg className="sidenav-BG" viewBox="0 0 261 526" xmlns="http://www.w3.org/2000/svg">
+        <svg className="sidenav-BG" viewBox="0 0 261 460" xmlns="http://www.w3.org/2000/svg">
             <rect className="back-rect" x="9" y="25" width="225" height="425" rx="13" fill="#78DAC8" fillOpacity="0.48" stroke="#78DAC8" strokeWidth="6"/>
-            <rect className="back-rect" x="23" y="8" width="225" height="425" rx="13" fill="white" stroke="#78DAC8" strokeWidth="6"/>
+            <rect x="23" y="8" width="225" height="425" rx="13" fill="white" stroke="#78DAC8" strokeWidth="6"/>
         </svg>
     );
 }
@@ -72,21 +72,27 @@ function HandleBrace(props) {
 }
 
 function SideBar() {
-    var width = window.innerWidth;
     const breakpoint = 1300;
+
+    var width = window.innerWidth;
 
     const handleClick = () => {
         const sidenavDOM = document.getElementsByClassName('sidenav')[0];
-        sidenavDOM.style.transform = sidenavDOM.style.transform === "translateX(-200%)"
-             ? "translateX(70%)" : "translateX(-200%)";
+        requestAnimationFrame(() => {
+            sidenavDOM.style.transform = sidenavDOM.style.transform === "translateX(-200%)"
+             ? "translateX(0%)" : "translateX(-200%)";
+        });
     };
 
     useEffect(() => {
+        const sidenavDOM = document.getElementsByClassName('sidenav')[0];
+
         const handleWindowResize = () => {
             width = window.innerWidth;
-            const sidenavDOM = document.getElementsByClassName('sidenav')[0];
-            sidenavDOM.style.transform = width < breakpoint ? "translateX(-200%)" : "translateX(0%)";
-        }
+            requestAnimationFrame(() => {
+                sidenavDOM.style.transform = width < breakpoint ? "translateX(-200%)" : "translateX(0%)";
+            });
+        };
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize)
     }, []);

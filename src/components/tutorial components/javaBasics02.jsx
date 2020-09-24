@@ -114,6 +114,22 @@ function JavaBasics02(props) {
                         typing it out yourself.
                     </p>
                     <img src={PlankInstance} className="rounded" id="instance" alt={classPlankAlt.instanceAltText}/>
+                    <br /> <br />
+                    <div className="code-breakdown">
+                        {'>'} <span className="inline-code"> public </span> This is a keyword we'll explore in the section below <br /><br />
+                        {'>'} <span className="inline-code"> class Main </span> Just like how Plank is a class below, we also have to wrap
+                        everything we do in Java in a class! <br /> <br />
+                        {'>'} <span className="inline-code"> public static void main(String[] args) </span> This is definitely a whole lot and
+                        it might be confusing for now but we'll get through it soon I promise! <br /> <br />
+                        {'>'} <span className="inline-code"> Plank myFirstPlank = new Plank(); </span> This is 
+                        the <span className="vocab-inst"> instance </span> of the Plank class. Notice how it feels in our variable formula from
+                        before, with just a few adjustments. <br /> <br />
+                        {'>'} <span className="inline-code"> //myFirstPlank.hardness {'>>>'} 2 </span> Anything that follows a // like this
+                        is a comment, which means it's not actually used as code, it's just for us to read. This comment is meant to show
+                        you that you can get the hardness attribute from the Plank instance using this dot syntax <br /><br />
+                        {'>'} <span className="inline-code"> class Plank {'{}'} </span> This is the same class from before, only this time 
+                        it's actually used to make an instance variable!
+                    </div>
                 </div>
                 <br /><br /><br /><br /><br />
             </div>
