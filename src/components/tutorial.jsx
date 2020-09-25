@@ -1,8 +1,10 @@
 import React from 'react';
 
 import './tutorial.css';
+import './tutorial components/rollingline.css';
 
 import Sidenav from './tutorial components/sidenav.jsx';
+import ScrollTop from './tutorial components/scrollTop.js';
 import JavaBasics01 from './tutorial components/javaBasics01.jsx';
 import JavaBasics02 from './tutorial components/javaBasics02.jsx';
 
@@ -26,7 +28,7 @@ class Tutorial extends React.Component {
 
                 {this.state.sectionOpen === "java" ? 
                     <div>
-                        <span className="rollingline" /> <br /> 
+                        <ScrollTop sectionClass="javaroll"/> <br /> 
                         <h5 className="rollingtitle">Java Basics</h5>
                         {this.state.pageOpen === "java01" ? <JavaBasics01 /> : null}
                         {this.state.pageOpen === "java02" ? <JavaBasics02 /> : null}
@@ -35,7 +37,7 @@ class Tutorial extends React.Component {
 
                 {this.state.sectionOpen === "forge" ? 
                     <div>
-                        <span className="rollingline forge" /> <br /> 
+                        <ScrollTop sectionClass="forgeroll" /> <br /> 
                         <h5 className="rollingtitle">Forge MDK</h5>
                         {this.state.pageOpen === "forge01" ? null : null}
                     </div>
@@ -43,7 +45,7 @@ class Tutorial extends React.Component {
 
                 {this.state.sectionOpen === "basicitem" ? 
                     <div>
-                        <span className="rollingline basicitem" /> <br /> 
+                        <ScrollTop sectionClass="basicitemroll" /> <br /> 
                         <h5 className="rollingtitle">Basic Item</h5>
                         {this.state.pageOpen === "basicitem01" ? null : null}
                     </div>

@@ -28,18 +28,18 @@ function Question1B() {
                 What is the value of the variable final_ans?
             </p>
             <div className="answers">
-                <AnswerItem ans={">>>" + '"hello"'} value="incorrect">
+                <AnswerItem ans={">>> 'hello'"} value="incorrect">
                     The <span className="inline-code">result</span> variable changes more than once because
                     the line <span className="inline-code">result = result + "hello"</span> is in a loop.
                 </AnswerItem>
-                <AnswerItem ans={">>>" + '"hello...World!...World!...World!...World!...World!'} value="incorrect">
+                <AnswerItem ans={">>> 'hello...World!...World!...World!...World!...World!'"} value="incorrect">
                     Almost! The "...World!" string is actually only added once, after the loop has finished.
                 </AnswerItem>
-                <AnswerItem ans={">>>" + '"hello...World!hello...World!hello...World!" ' + 'x5 times'} value="incorrect">
+                <AnswerItem ans={">>> 'hello...World!hello...World!hello...World!' x5 times"} value="incorrect">
                     The result variable only adds the "hello" string 5 times, it only adds the "...World!" once the loop
                     is complete!
                 </AnswerItem>
-                <AnswerItem ans={">>>" + '"hellohellohellohellohello...World!"'} value="correct">
+                <AnswerItem ans={">>> 'hellohellohellohellohello...World!'"} value="correct">
                     Correct! When we call our function and provide it with the number 5 it adds 5 "hello"s to the variable
                     result, then adds the final "...World!" once the loop is done!
                 </AnswerItem>

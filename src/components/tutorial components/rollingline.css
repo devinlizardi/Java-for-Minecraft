@@ -1,0 +1,34 @@
+.rollingtitle {
+    position: absolute;
+    left: var(--main-left-percent);;
+    margin-left: -380px;
+    top: 110px;
+    margin-top: 0;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SECTION TITLES */
+#rollingline {
+    position: fixed;
+    left: var(--main-left-percent);
+    margin-left: -380px;
+    margin-top: -8px;
+    width: 5rem;
+    height: 0.75rem;
+    border: none;
+    z-index: 1;
+    transition: all 100ms ease;
+}
+
+.javaroll {
+    background-color: red;
+}
+
+.forgeroll {
+    background-color: green;
+}
+
+.basicitemroll {
+    background-color: blue;
+}

@@ -33,7 +33,7 @@ function SidebarHandler() {
         changeMargin();
         window.addEventListener("resize", changeMargin);
         return () => window.removeEventListener("resize", changeMargin);
-    }, []);
+    });
 
     return(
         <div className="sidebar" onClick={handleClick}>
