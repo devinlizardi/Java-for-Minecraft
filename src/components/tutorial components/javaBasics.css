@@ -1,6 +1,6 @@
 .text-content-base {
     position: absolute;
-    left: 50%;
+    left: var(--main-left-percent);
     top: 110px;
     margin-left: -380px;
 }
@@ -11,8 +11,8 @@
     margin-top: -20px;
     padding: 5px;
     padding-left: 15px;
-    background: rgba(218, 217, 190, 0.1);
-    border-left: 3px solid rgba(124, 194, 181, 0.151);
+    background: #fffdfb;
+    border-left: 3px solid #FFC9C1;
 }
 
 .text-content a {

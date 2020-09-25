@@ -6,7 +6,7 @@
 
 .header {
   position: relative;
-  left: 50%;
+  left: var(--main-left-percent);
   margin-left: -380px;
   margin-top: 30px;
   background: #7CC2B5;
@@ -36,9 +36,11 @@
   width: 700px;
   height: 2px;
   position: relative;
-  left: 0%;
   border: 0;
-  color: burlywood;
-  background: burlywood;
-  opacity: 0.5;
+  color: black;
+  background: black;
+  opacity: 0.6;
+  left: var(--main-left-percent);
+  margin-left: -380px;
+  margin-top: 0;
 }

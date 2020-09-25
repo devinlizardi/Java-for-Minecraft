@@ -8,10 +8,11 @@
     width: 200px;
     height: auto;
     position: fixed;
-    margin-left: 4rem;
+    margin-left: -38rem;
     margin-top: 20px;
     transition: all 1s ease;
     font-size: 110%;
+    left: var(--main-left-percent);
 }
 
 .sidenav-BG {
@@ -30,7 +31,7 @@
 
 .sidebar {
     position: absolute;
-    left: 50%;
+    left: var(--main-left-percent);;
     top: 5%;
     margin-top: -15px;
     margin-left: -410px;
@@ -49,7 +50,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .sidebar {
         transform: translateX(0%);
         opacity: 1;
@@ -141,7 +142,7 @@
 /* SECTION TITLES */
 .rollingline {
     position: absolute;
-    left: 50%;
+    left: var(--main-left-percent);;
     margin-top: -8px;
     margin-left: -380px;
     margin-bottom: 0;
@@ -153,7 +154,7 @@
 
 .rollingtitle {
     position: absolute;
-    left: 50%;
+    left: var(--main-left-percent);;
     margin-left: -380px;
     top: 110px;
     margin-top: 0;

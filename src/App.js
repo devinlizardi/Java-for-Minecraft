@@ -17,7 +17,7 @@ class App extends React.Component {
     render() {
         return (
             <Router>
-                <div>
+                <div id="app">
                     <div className="header">
                         <Link to="/" id="header-title"><h1>lizard learning</h1></Link>
                         <Link to="/" className="header-link"> Intro </Link> |

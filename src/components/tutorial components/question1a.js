@@ -10,7 +10,7 @@ function Question1A() {
         <div className="question-block">
             <br />
             <p className="question-code">
-                double xPos = 0.0; <br /> <br />
+                int xPos = 0; <br /> <br />
                 while (true) {'{'} <br />
                 &nbsp;&nbsp;if (xPos {'>'} 300) {'{'} <br />
                 &nbsp;&nbsp;&nbsp;&nbsp;xPos = 0; <br />

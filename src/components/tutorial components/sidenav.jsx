@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import '../tutorial.css';
 
 import CurlyIcon from '../../assets/curlyBraceIcon.svg';
-import CurlyBordered from '../../assets/curlyBordered.svg';
+import SidebarHandler from './sidebar.js';
 
 class Sidenav extends React.Component {
     constructor(props) {
@@ -47,7 +47,7 @@ class Sidenav extends React.Component {
                 {this.state.forgemdkOpened && <BasicItemOpen pageOpen={this.props.pageOpen} openSection={this.props.openSection} />}
             </div>
 
-            <SideBar />
+            <SidebarHandler />
             </div>
         )
     }
@@ -68,39 +68,6 @@ function HandleBrace(props) {
     return (
         <img className={"curlybrace " + sectionOpen}
         src={CurlyIcon} alt="curly brace for fun"/>
-    );
-}
-
-function SideBar() {
-    const breakpoint = 1300;
-
-    var width = window.innerWidth;
-
-    const handleClick = () => {
-        const sidenavDOM = document.getElementsByClassName('sidenav')[0];
-        requestAnimationFrame(() => {
-            sidenavDOM.style.transform = sidenavDOM.style.transform === "translateX(-200%)"
-             ? "translateX(0%)" : "translateX(-200%)";
-        });
-    };
-
-    useEffect(() => {
-        const sidenavDOM = document.getElementsByClassName('sidenav')[0];
-
-        const handleWindowResize = () => {
-            width = window.innerWidth;
-            requestAnimationFrame(() => {
-                sidenavDOM.style.transform = width < breakpoint ? "translateX(-200%)" : "translateX(0%)";
-            });
-        };
-        window.addEventListener("resize", handleWindowResize);
-        return () => window.removeEventListener("resize", handleWindowResize)
-    }, []);
-
-    return(
-        <div className="sidebar" onClick={handleClick}>
-            <img src={CurlyBordered} alt="click for menu"/>
-        </div>
     );
 }
 
