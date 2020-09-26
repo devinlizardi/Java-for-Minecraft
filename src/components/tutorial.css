@@ -32,22 +32,23 @@
 .sidebar {
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 10%;
-    margin-left: 2rem;
+    left: var(--main-left-percent);
+    margin-left: -32rem;
+    margin-top: 0;
+    width: 2rem;
+    height: auto;
     transform: translateX(100%);
     opacity: 0;
     transition: all 300ms ease;
 }
 
-.sidebar img {
-    width: 60%;
-    height: 60%;
+.brace-path {
+    transition: all 100ms ease;
 }
 
-.sidebar img:hover {
-    filter: brightness(200%);
+.sidebar:hover .brace-path {
     cursor: pointer;
+    transform: translateX(-20%);
 }
 
 @media (max-width: 1400px) {
