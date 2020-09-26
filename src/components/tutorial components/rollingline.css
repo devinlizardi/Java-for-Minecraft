@@ -11,11 +11,7 @@
 /* SECTION TITLES */
 #rollingline {
     position: fixed;
-    left: var(--main-left-percent);
-    margin-left: -380px;
     margin-top: -8px;
-    width: 5rem;
-    height: 0.75rem;
     border: none;
     z-index: 1;
     transition: all 100ms ease;
@@ -34,16 +30,55 @@
 }
 
 .scroll-svg {
-    left: var(--main-left-percent);
+    left: 0;
     z-index: 2;
-    margin-left: -450px;
+    margin-left: 4.25rem;
     margin-top: -12px;
     position: fixed;
     transition: all 100ms ease;
-    opacity: 0.5;
+}
+
+/* FUNCTIONAL CLASSES */
+
+.scrolled-line {
+    left: var(--main-left-percent);
+    margin-left: -380px;
+    width: 5rem;
+    height: 0.75rem;
+    opacity: 1;
+}
+
+.scroll-up-line {
+    margin-left: 3.75rem;
+    left: 0;
+    width: 3rem;
+    height: 1rem;
+    opacity: 0.3;
 }
 
 .scroll-svg:hover {
     transform: translateY(-25%);
     opacity: 1;
+}
+
+/* ANIMATIONS */
+.scroll-in-enter {
+    transform: translateY(75%);
+    overflow: hidden;
+    opacity: 0;
+}
+
+.scroll-in-enter-active {
+    transform: translateY(0%);
+    opacity: 0.5;
+}
+
+.scroll-in-exit {
+    transform: translateY(0%);
+    opacity: 0.5;
+}
+
+.scroll-in-exit-active {
+    transform: translateY(75%);
+    opacity: 0;
 }
