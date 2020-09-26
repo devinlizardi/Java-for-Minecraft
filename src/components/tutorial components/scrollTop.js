@@ -1,20 +1,21 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import './rollingline.css';
+import { CSSTransition } from 'react-transition-group';
 
 function ScrollTop(props) {
     const breakpoint = 99;
+    const [isEntered, setIsEntered] = useState(false);
 
     var rollingDom;
 
     let lastScrollPos = 0;
     let ticking = false;
-    let isEntered = false;
 
     function handleScroll(scrollPos) {
-        isEntered = scrollPos > breakpoint;
+        setIsEntered(scrollPos > breakpoint);
         rollingDom.style.transform = isEntered ? "translateX(-160%)" : "translateX(0%)";
         rollingDom.style.width = isEntered ? "3rem" : "5rem";
-        rollingDom.style.height = isEntered ? "3.5rem" : "0.75rem";
+        rollingDom.style.height = isEntered ? "1rem" : "0.75rem";
         rollingDom.style.opacity = isEntered ? "0.3" : "1";
     }
 
@@ -35,7 +36,22 @@ function ScrollTop(props) {
     });
 
     return(
+        <div>
         <span id="rollingline" className={props.sectionClass}/>
+        <ScrollUpArrow enter={isEntered}/>
+        </div>
+    );
+}
+
+function ScrollUpArrow(props) {
+    const {enter} = props;
+
+    return(
+        <CSSTransition in={enter} timeout={100} unmountOnExit>
+            <svg className="scroll-svg" width="30" height="33" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 18L11.5 8L23 18" stroke="black" strokeWidth="3"/>
+            </svg>
+        </CSSTransition>
     );
 }
 

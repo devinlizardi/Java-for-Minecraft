@@ -32,3 +32,18 @@
 .basicitemroll {
     background-color: blue;
 }
+
+.scroll-svg {
+    left: var(--main-left-percent);
+    z-index: 2;
+    margin-left: -450px;
+    margin-top: -12px;
+    position: fixed;
+    transition: all 100ms ease;
+    opacity: 0.5;
+}
+
+.scroll-svg:hover {
+    transform: translateY(-25%);
+    opacity: 1;
+}
