@@ -57,6 +57,17 @@
     opacity: 0.3;
 }
 
+@media (max-width: 1080px) {
+    .scroll-up-line {
+        left: 0;
+        margin-left: 2.5rem;
+    }
+    .scroll-svg {
+        left: 0;
+        margin-left: 3rem;
+    }
+}
+
 .scroll-svg:hover {
     transform: translateY(-25%);
     opacity: 1;

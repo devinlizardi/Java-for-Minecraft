@@ -58,6 +58,13 @@
     }
 }
 
+@media (max-width: 1080px) {
+    .sidebar {
+        left: 0;
+        margin-left: 0.5rem;
+    }
+}
+
 /* CURLY SIDE BRACE */
 .curlybrace {
     position: absolute;

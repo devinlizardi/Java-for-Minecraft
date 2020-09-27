@@ -8,7 +8,13 @@ function Question1A() {
     return(
         <div>
         <div className="question-block">
-            <br />
+            <p>
+                The following code uses a <span className="inline-code"> while-loop</span>, which means each line of code inside it's curly-braces
+                will be repeated in order until the condition of the while-loop is false. In this case it's always true, so think of it as a forever-loop!
+                <br /><br />
+                There's also an <span className="inline-code"> if-statement </span> that works just as you'd think: the code asks if the condition is true,
+                and if it is it goes inside, if not it skips it.
+            </p>
             <p className="question-code">
                 int xPos = 0; <br /> <br />
                 while (true) {'{'} <br />
@@ -18,11 +24,12 @@ function Question1A() {
                 &nbsp;&nbsp;xPos = xPos + 1; <br />
                 {'}'}
             </p>
-            <p> Which of the following animations best displays the behavior described above? <br /> <br />
-                Anything inside the <span className="inline-code">while(true)</span> curly-braces will run in a loop forever, and anything in the
-                <span className="inline-code"> if (condition) </span> curly-braces will only happen if that condition is true. For the animation, the xPos variable represents
-                the x position of the square along the container.
+            <p>
+                The <span className="inline-code"> xPos </span> variable represents the x-position of the moving blocks in the answers below, and as you 
+                can see in the code it's constantly changing. Each answer is showing a different way this variable is changing, and <b> only one of them
+                matches the code </b> - try and figure out which one it is!
             </p>
+            <br />
             <div className="answers">
                 <AnswerItem ans={<MoveAnimation version={"example-block-1"} />} value="correct">
                     Correct! The code does the following loop forever: <br />
@@ -37,6 +44,9 @@ function Question1A() {
                 <AnswerItem ans={<MoveAnimation version="example-block-3"/>} value="incorrect">
                     Because the line <span className="inline-code"> xPos = xPos + 1; </span> is inside the forever-loop the 
                     xPos variable <em> never stops changing.</em>
+                    <br /><br />
+                    <b>Note: </b>If you want to spend some more time exercising these coding muscles, using loops and changing variables, I highly recommend trying to
+                    write out how you think these other blocks are moving. What do you think would be different from my code?
                 </AnswerItem>
             </div>
         </div>

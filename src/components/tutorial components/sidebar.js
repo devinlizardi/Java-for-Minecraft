@@ -13,6 +13,7 @@ function SidebarHandler() {
 
     const changeMargin = () => {
         width = window.innerWidth;
+        console.log(width);
         isOnScreen = width > breakpoint;
         sidenavDom = document.getElementsByClassName('sidenav')[0];
         requestAnimationFrame(() => {

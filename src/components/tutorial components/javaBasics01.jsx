@@ -9,10 +9,23 @@ function JavaBasics01(props) {
     return <div className="text-content-base">
                 <h1><em>HELLO WORLD</em></h1>
                 <div className="text-content">
+                    <h3 className="section-title">Intro</h3>
+                    <p>
+                        In this section we're going to cover some of the basics of programming, specifically variables and functions, in the context
+                        of Java. If you're already comfortable with these concepts in another language then this should be a quick refresher for you,
+                        and give you a sense of what Java looks like.
+                        <br /> <br />
+                        If you're new to programming then this is a fantastic place to start, we're going to walk through one of these concepts then
+                        add some complications and explore some common patterns you'll be using later. Also I believe it's important to recognize that
+                        these abstract ideas can be really confusing, and the question / answer sections are meant for you to explore, not test you. I 
+                        recommend opening each answer even if you know it's wrong, just to double check understanding.
+                        <br /><br />
+                        With that let's get started!
+                    </p>
+                    <hr className="section-divider" />
                     <h3 className="section-title">Variables</h3>
                     <p>Let's write a variation of the basic "Hello World" program and get a sense of 
-                    what Java syntax looks like. This is built on fundamental concepts like variables and
-                    knowing what "printing to a console" means. <a href="#"> Here's some info on that if you need. </a>
+                    what Java syntax looks like.
                     <br /> <br />
                     Java wants you to be <em> extremeley </em> specific when making anything, and I've found understanding
                     this basic formula can help get a sense of how to approach things: <br /> <br />
@@ -34,8 +47,8 @@ function JavaBasics01(props) {
                     </div>
                     <p>
                     An integer is one of the seven Primitive Types of variables in Java, and that's why we refer to it with
-                    a lowercase 'L.' If we wanted to make a variable of a more complex type, like a <span className="inline-code">String</span>,
-                    then we use capital first letters. Here let's make a String we can use to build our Hello World program:
+                    a lowercase 'i.' If we wanted to make a variable of a more complex type, like a <span className="inline-code">String</span>,
+                    then we use capital first letters. Let's make a String we can use to build our Hello World program:
                         <br /><br /><span className="code-text"> String firstHalf = "Hello"; </span> <br /> <br />
                     Wonderful! Let's play with some variables and check comprehension. <br /> <br />
                     </p>
@@ -45,8 +58,7 @@ function JavaBasics01(props) {
                     <p>
                         Variables are fantastic for storing and grabbing information for later, but as you saw in the
                         second question their values can also be changed. Take a look at this next example and try to
-                        make a guess at what it's doing, even if you aren't familiar with an if-statement or all the
-                        curly braces and paranthesis.
+                        make a guess at what it's doing, this one is a bit harder than the last so take your time.
                     </p>
                     <Q1_a />
                     <p>
@@ -85,7 +97,18 @@ function JavaBasics01(props) {
                     </p>
                     <Q1_b />
                     <p>
-                        If you've gotten this far you've done fantastic work and you're almost done with this section! <br />
+                        If you've gotten this far you've done fantastic work and you're almost done with this section! <br /> <br />
+                        <b>Note: </b> This question uses the pattern of <span className="inline-code"> variable = variable + somethingNew </span> because
+                        this is a pattern than can be very confusing for new programmers but is really important to understand. When assigning variables
+                        their value, Java reads the code from right to left; it evaluates whatever is on the <em> right </em> side of the equals sign all
+                        the way until it has a basic value (like an int or bool or string) and <em> only then </em> assigns that to the variable on the left.
+                    </p>
+                    <hr className="section-divider"/>
+                    <h3 className="section-title">Final notes</h3>
+                    <p>
+                        It's important to recognize that this is really complicated stuff, and you might feel a little overwhelmed. Programming, especially
+                        when you're first learning, is just somehow really good at making you feel dumb. Thankfully, this is the hardest part. If you have an idea
+                        of what variables are and can do - how functions can play with them and change them, then you're doing fantastic work :)
                     </p>
                 </div>
                 <br /> <br />
