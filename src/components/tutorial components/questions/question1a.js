@@ -1,5 +1,5 @@
 import React from 'react';
-import './javaBasics.css';
+import './../javaBasics.css';
 import './animationsQ1.css';
 
 import AnswerItem from './answerItem';

@@ -3,6 +3,7 @@
     left: var(--main-left-percent);
     top: 110px;
     margin-left: -380px;
+    transition: all 300ms ease;
 }
 
 .text-content {
@@ -140,7 +141,7 @@
 
 /* IMAGES */
 img {
-    max-width: 600px;;
+    max-width: 500px;;
     height: auto;
 }
 
@@ -149,7 +150,7 @@ img {
     height: auto;
     border-radius: 20px;
     border: 5px solid rgb(15, 177, 15);
-    margin-left: 10%;
+    margin-left: 8%;
     transition: all 100ms ease;
     box-shadow: 10px -5px rgba(15, 177, 15, 0.219);
 }
@@ -182,16 +183,9 @@ img {
 
 /* IDK WHAT THIS IS */
 
-#blockcomp {
-    position: relative;
-    left: 5rem;
-}
-
 #blockcomp-desc {
-    position: absolute;
-    left: 38rem;
-    top: 11rem;
-    width: 10rem;
+    margin-left: 8%;
+    position: relative;
     font-size: smaller;
 }
 

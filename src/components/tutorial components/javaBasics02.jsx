@@ -1,7 +1,7 @@
 import React from 'react';
 import './javaBasics.css';
 
-import Q2 from './question2';
+import Q2 from './questions/question2';
 import BlockComparison from './../../assets/block_comparison.jpg';
 import PlankJava from './../../assets/plankjava.jpg';
 import CreativeInventory from './../../assets/creative_inv.png';
@@ -37,10 +37,8 @@ function JavaBasics02(props) {
                     <hr className="section-divider" />
                     <h3 className="section-title">Attributes</h3>
                     <p>Let's look at some Minecraft concepts and get to OOP.</p>
-                    <div id="blockcomp">
-                        <img src={BlockComparison} alt="Plank / Glowstone / Stone"/>
-                        <p id="blockcomp-desc">Note: I made up these values for example purposes</p>
-                    </div>
+                    <img className="rounded" src={BlockComparison} alt="Plank / Glowstone / Stone"/>
+                    <p id="blockcomp-desc">Note: I made up these values for example purposes</p>
                     <p>
                         In this diagram we describe 3 <b> different </b> blocks - wooden plank, glowstone, and diamond ore - 
                         with 3 of the <b> same </b> <span className="vocab-attr"> attributes</span>.
@@ -122,7 +120,7 @@ function JavaBasics02(props) {
                         {'>'} <span className="inline-code"> public static void main(String[] args) </span> This is definitely a whole lot and
                         it might be confusing for now but we'll get through it soon I promise! <br /> <br />
                         {'>'} <span className="inline-code"> Plank myFirstPlank = new Plank(); </span> This is 
-                        the <span className="vocab-inst"> instance </span> of the Plank class. Notice how it feels in our variable formula from
+                        the <span className="vocab-inst"> instance </span> of the Plank class. Notice how it fills in our variable formula from
                         before, with just a few adjustments. <br /> <br />
                         {'>'} <span className="inline-code"> //myFirstPlank.hardness {'>>>'} 2 </span> Anything that follows a // like this
                         is a comment, which means it's not actually used as code, it's just for us to read. This comment is meant to show
@@ -130,6 +128,15 @@ function JavaBasics02(props) {
                         {'>'} <span className="inline-code"> class Plank {'{}'} </span> This is the same class from before, only this time 
                         it's actually used to make an instance variable!
                     </div>
+                    <p>
+                        The <span className="vocab-inst"> instance </span> <span className="inline-code"> myFirstPlank </span> is of the 
+                        Plank class, and therefore has all the attributes we gave it from before! We can access those attributes and do
+                        stuff with them by using the period like in the comment above. 
+                        <br /> <br />
+                        The next questions are just about identifying the instances in the code and what class they come from.
+                        <br />
+                    </p>
+                    
                 </div>
                 <br /><br /><br /><br /><br />
             </div>

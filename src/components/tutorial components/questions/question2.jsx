@@ -1,10 +1,10 @@
 import React from 'react';
 import AnswerItem from './answerItem';
 
-import DiamondOre from './../../assets/diamond_ore.png';
-import Glass from './../../assets/glass.png';
-import Obsidian from './../../assets/obsidian.png';
-import BlockOfNetherite from './../../assets/block_of_netherite.png';
+import DiamondOre from './../../../assets/diamond_ore.png';
+import Glass from './../../../assets/glass.png';
+import Obsidian from './../../../assets/obsidian.png';
+import BlockOfNetherite from './../../../assets/block_of_netherite.png';
 
 function Question2() {
     return(

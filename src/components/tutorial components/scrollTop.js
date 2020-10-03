@@ -3,7 +3,7 @@ import './rollingline.css';
 import { CSSTransition } from 'react-transition-group';
 
 function ScrollTop(props) {
-    const breakpoint = 99;
+    const breakpoint = 89;
     const [isEntered, setIsEntered] = useState(false);
     const [enterClass, setEnterClass] = useState(" scrolled-line ");
     

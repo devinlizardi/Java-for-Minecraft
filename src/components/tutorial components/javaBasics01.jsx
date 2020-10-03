@@ -1,11 +1,11 @@
 import React from 'react';
 import './javaBasics.css';
 
-import Q1 from './question1.jsx';
-import Q1_a from './question1a';
-import Q1_b from './question1b';
+import Q1 from './questions/question1.jsx';
+import Q1A from './questions/question1a';
+import Q1B from './/questions/question1b';
 
-function JavaBasics01(props) {
+function JavaBasics01() {
     return <div className="text-content-base">
                 <h1><em>HELLO WORLD</em></h1>
                 <div className="text-content">
@@ -60,7 +60,7 @@ function JavaBasics01(props) {
                         second question their values can also be changed. Take a look at this next example and try to
                         make a guess at what it's doing, this one is a bit harder than the last so take your time.
                     </p>
-                    <Q1_a />
+                    <Q1A />
                     <p>
                         This is what coding is all about; setting up variables that we can use to represent something like an x-position,
                         then <em> changing </em> them based on a condition we set. This brings us to functions!
@@ -95,7 +95,7 @@ function JavaBasics01(props) {
                         Fantastic! If you feel good about understanding some of this function syntax explore this question
                         below.
                     </p>
-                    <Q1_b />
+                    <Q1B />
                     <p>
                         If you've gotten this far you've done fantastic work and you're almost done with this section! <br /> <br />
                         <b>Note: </b> This question uses the pattern of <span className="inline-code"> variable = variable + somethingNew </span> because
