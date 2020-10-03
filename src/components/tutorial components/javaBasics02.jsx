@@ -1,5 +1,6 @@
 import React from 'react';
 import './javaBasics.css';
+import './questions/questions.css';
 
 import Q2 from './questions/question2';
 import Q2A from './questions/question2a';
@@ -113,7 +114,7 @@ function JavaBasics02() {
                         Java visualizer like <a href="https://cscircles.cemc.uwaterloo.ca/java_visualize/" target="_blank" rel="noopener noreferrer"> this </a> and 
                         typing it out yourself.
                     </p>
-                    <img src={PlankInstance} className="rounded" id="instance" alt={classPlankAlt.instanceAltText}/>
+                    <img src={PlankInstance} className="rounded img-inst" alt={classPlankAlt.instanceAltText}/>
                     <br /> <br />
                     <div className="code-breakdown">
                         {'>'} <span className="inline-code"> public </span> This is a keyword we'll explore in the section below <br /><br />

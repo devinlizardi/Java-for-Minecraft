@@ -4,18 +4,20 @@ function SidebarHandler() {
     const breakpoint = 1400;
     const standardMargin = "-38rem";
     const offScreenMargin = "-80rem";
-    const mainLeftPercent = getComputedStyle(document.documentElement)
-        .getPropertyValue('--main-left-percent');
 
+    var mainLeftPercent = getComputedStyle(document.documentElement)
+        .getPropertyValue('--main-left-percent');
     var width;
     var isOnScreen;
     var sidenavDom;
 
     const changeMargin = () => {
         width = window.innerWidth;
-        console.log(width);
         isOnScreen = width > breakpoint;
         sidenavDom = document.getElementsByClassName('sidenav')[0];
+        mainLeftPercent = getComputedStyle(document.documentElement)
+            .getPropertyValue('--main-left-percent');
+
         requestAnimationFrame(() => {
             sidenavDom.style.marginLeft = isOnScreen ? standardMargin : offScreenMargin;
             sidenavDom.style.left = mainLeftPercent;

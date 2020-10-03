@@ -1,0 +1,117 @@
+/* IMAGES */
+img {
+    max-width: 500px;;
+    height: auto;
+}
+
+.rounded {
+    width: 25rem;
+    height: auto;
+    border-radius: 20px;
+    border: 5px solid rgb(15, 177, 15);
+    margin-left: 8%;
+    transition: all 100ms ease;
+    box-shadow: 10px -5px rgba(15, 177, 15, 0.219);
+}
+
+.rounded:hover {
+    box-shadow: 20px -10px rgba(15, 177, 15, 0.397);
+}
+
+.img-inst {
+    border-color: rgb(81, 119, 241);
+    box-shadow: 10px -5px rgba(81, 119, 241, 0.15);
+    width: 100%;
+    height: auto;
+}
+
+.img-inst:hover {
+    box-shadow: 20px -10px rgba(81, 119, 241, 0.3);
+}
+
+#instance-graphic {
+    width: 30rem;
+    height: auto;
+    transition: all 100ms ease;
+}
+
+#instance-graphic:hover{
+    width: 40rem;
+    height: auto;
+}
+
+#class-container {
+    left: 0;
+    margin-left: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#class-first {
+    margin: 0;
+    max-width: 18rem;
+    height: auto;
+}
+
+#class-lower {
+    margin-left: 1rem;
+    max-width: 19rem;
+}
+
+#class-main-ex {
+    max-width: 35rem;
+}
+
+/* IDK WHAT THIS IS */
+
+#blockcomp-desc {
+    margin-left: 8%;
+    position: relative;
+    font-size: smaller;
+}
+
+.ex-img {
+    display: flex;
+}
+
+.ex-img img {
+    width: 5rem;
+    height: auto;
+    align-self: flex-end;
+}
+
+.ex-img p {
+    margin-left: 2rem;
+}
+
+.instances-box {
+    --main-border-color: rgb(81, 119, 241);
+    --main-bg: rgba(81, 118, 241, 0.315);
+    --main-bg-pre: rgba(81, 118, 241, 0.178);
+    margin-left: 5rem;
+    display: flex;
+    width: fit-content;
+    padding: 0 1rem 0 1rem;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 5px solid var(--main-border-color);
+    box-shadow: 10px -5px var(--main-bg-pre);
+    transition: all 100ms ease;
+}
+
+#expanding {
+    margin-left: 1rem;
+}
+
+.instances-box:hover {
+    box-shadow: 20px -10px var(--main-bg);
+}
+
+.instances-box p {
+    width: 20rem;
+}
+
+.instances-box img {
+    margin: 1rem 2rem 1rem 2rem;
+}
