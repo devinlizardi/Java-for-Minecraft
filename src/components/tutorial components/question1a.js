@@ -9,7 +9,7 @@ function Question1A() {
         <div>
         <div className="question-block">
             <p>
-                The following code uses a <span className="inline-code"> while-loop</span>, which means each line of code inside it's curly-braces
+                The following code uses a <span className="inline-code"> while-loop </span>, which means each line of code inside it's curly-braces
                 will be repeated in order until the condition of the while-loop is false. In this case it's always true, so think of it as a forever-loop!
                 <br /><br />
                 There's also an <span className="inline-code"> if-statement </span> that works just as you'd think: the code asks if the condition is true,
