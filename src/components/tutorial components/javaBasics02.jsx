@@ -2,13 +2,15 @@ import React from 'react';
 import './javaBasics.css';
 
 import Q2 from './questions/question2';
+import Q2A from './questions/question2a';
+
 import BlockComparison from './../../assets/block_comparison.jpg';
 import PlankJava from './../../assets/plankjava.jpg';
 import CreativeInventory from './../../assets/creative_inv.png';
 import CreativeGraphic from './../../assets/inventory_instance.jpg';
 import PlankInstance from './../../assets/plankInstanceJava.jpg';
 
-function JavaBasics02(props) {
+function JavaBasics02() {
     const classPlankAlt = {
         plankAltText : "class Plank { / int hardness = 2; / boolean isDropsSelf = true; / double luminanc = 0.0 / ?",
         instanceAltText : `public class Main { / public static void main(String[] args) { / Plank myFirstPlank = new Plank();/
@@ -136,7 +138,7 @@ function JavaBasics02(props) {
                         The next questions are just about identifying the instances in the code and what class they come from.
                         <br />
                     </p>
-                    
+                    <Q2A />
                 </div>
                 <br /><br /><br /><br /><br />
             </div>
