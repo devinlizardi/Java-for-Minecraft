@@ -4,6 +4,7 @@ import './questions/questions.css';
 
 import Q2 from './questions/question2';
 import Q2A from './questions/question2a';
+import CodeBreakdown from './questions/codeBreakdown';
 
 import BlockComparison from './../../assets/block_comparison.jpg';
 import PlankJava from './../../assets/plankjava.jpg';
@@ -40,7 +41,7 @@ function JavaBasics02() {
                     <hr className="section-divider" />
                     <h3 className="section-title">Attributes</h3>
                     <p>Let's look at some Minecraft concepts and get to OOP.</p>
-                    <img className="rounded" src={BlockComparison} alt="Plank / Glowstone / Stone"/>
+                    <img className="rounded" id="block-comp-img" src={BlockComparison} alt="Plank / Glowstone / Stone"/>
                     <p id="blockcomp-desc">Note: I made up these values for example purposes</p>
                     <p>
                         In this diagram we describe 3 <b> different </b> blocks - wooden plank, glowstone, and diamond ore - 
@@ -63,15 +64,13 @@ function JavaBasics02() {
                         or you can contact me for additional support.
                     </p>
                     <img className="rounded" src={PlankJava} alt={classPlankAlt.plankAltText}/>
-                    <div className="code-breakdown">
-                        <p>
-                            {'>'} <span className="inline-code"> Class Plank </span> tells Java everything between the curly braces {'{ }'} is
-                            what is inside this class. <br /> <br />
-                            {'>'} <span className="inline-code" > int hardness / boolean isDropsSelf / double luminance </span> These are 
-                            the <span className="vocab-attr"> attributes </span> from before - just defined <em> inside </em> the class so
-                             they have their associated values.<br />
-                        </p>
-                    </div>
+                    <CodeBreakdown>
+                        {'>'} <span className="inline-code"> Class Plank </span> tells Java everything between the curly braces {'{ }'} is
+                        what is inside this class. <br /> <br />
+                        {'>'} <span className="inline-code" > int hardness / boolean isDropsSelf / double luminance </span> These are 
+                        the <span className="vocab-attr"> attributes </span> from before - just defined <em> inside </em> the class so
+                            they have their associated values.<br />
+                    </CodeBreakdown>
                     <p>
                         So as you can see because the attributes are contained inside the Plank class you can think of the basic form of a class 
                         as a group of attributes. Now to actually <em> use </em> this class we need to make an <span className="vocab-inst">instance.</span>
@@ -116,7 +115,7 @@ function JavaBasics02() {
                     </p>
                     <img src={PlankInstance} className="rounded img-inst" alt={classPlankAlt.instanceAltText}/>
                     <br /> <br />
-                    <div className="code-breakdown">
+                    <CodeBreakdown>
                         {'>'} <span className="inline-code"> public </span> This is a keyword we'll explore in the section below <br /><br />
                         {'>'} <span className="inline-code"> class Main </span> Just like how Plank is a class below, we also have to wrap
                         everything we do in Java in a class! <br /> <br />
@@ -130,7 +129,7 @@ function JavaBasics02() {
                         you that you can get the hardness attribute from the Plank instance using this dot syntax <br /><br />
                         {'>'} <span className="inline-code"> class Plank {'{}'} </span> This is the same class from before, only this time 
                         it's actually used to make an instance variable!
-                    </div>
+                    </CodeBreakdown>
                     <p>
                         The <span className="vocab-inst"> instance </span> <span className="inline-code"> myFirstPlank </span> is of the 
                         Plank class, and therefore has all the attributes we gave it from before! We can access those attributes and do

@@ -1,6 +1,7 @@
 import React from 'react';
 import './javaBasics.css';
 
+import CodeBreakdown from './questions/codeBreakdown';
 import Q1 from './questions/question1.jsx';
 import Q1A from './questions/question1a';
 import Q1B from './/questions/question1b';
@@ -31,8 +32,7 @@ function JavaBasics01() {
                     this basic formula can help get a sense of how to approach things: <br /> <br />
                         <span className="code-text"> Type name = value; </span>
                     </p>
-                    <div className="code-breakdown">
-                    <p>
+                    <CodeBreakdown>
                         {'>'} <span className="inline-code">Type</span> here refers to the class of the variable we want to make, 
                         so if we wanted something basic like an integer 
                         (e. g. 0, 1, 2...) then our <span className="inline-code">Type</span> is <span className="inline-code">int.</span> <br /> <br />
@@ -43,8 +43,7 @@ function JavaBasics01() {
                         is where we have to match the Type; for a variable of Type int we put a number like 0, 1, 2, etc. <br /> <br />
                         {'>'} Lastly, that little semicolon (;) tells Java this is the end of our line of code, or at least the end of this idea 
                         (which should be the end of this line).
-                    </p>
-                    </div>
+                    </CodeBreakdown>
                     <p>
                     An integer is one of the seven Primitive Types of variables in Java, and that's why we refer to it with
                     a lowercase 'i.' If we wanted to make a variable of a more complex type, like a <span className="inline-code">String</span>,
@@ -76,8 +75,7 @@ function JavaBasics01() {
                         &nbsp;&nbsp; return result; <br />
                         {'}'}
                     </div>
-                    <br />
-                    <div className="code-breakdown">
+                    <CodeBreakdown>
                         {'>'} <span className="inline-code">int</span> here fills in the same variable formula as above, it tells
                         Java that this function is going to give us back an integer.<br /><br/>
                         {'>'} <span className="inline-code">addNumbers</span> is the name of our function, similar to how 
@@ -90,7 +88,7 @@ function JavaBasics01() {
                         {'>'} <span className="inline-code">return result;</span> This sends back the result variable so we can grab it later.
                         Note that because we <em> return </em> the result variable it's type must match the one we declared at the very beginning
                         of our function.
-                    </div>
+                    </CodeBreakdown>
                     <p>
                         Fantastic! If you feel good about understanding some of this function syntax explore this question
                         below.

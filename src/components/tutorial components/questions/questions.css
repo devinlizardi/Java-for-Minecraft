@@ -1,3 +1,39 @@
+.code-breakdown {
+    overflow: hidden;
+    height: fit-content;
+    max-height: 0;
+    opacity: 0;
+    margin-left: -15px;
+    margin-top: -1rem;
+    padding: 0.5rem 1rem 0.5rem 4rem;
+    width: auto;
+    font-size: 90%;
+    font-style: italic;
+    background-color: rgba(255, 0, 0, 0.24);
+    transition: all 300ms ease;
+}
+
+.code-breakdown-title {
+    font-style: italic;
+    font-weight: lighter;
+    margin-left: 6.5rem;
+    overflow: visible;
+    width: fit-content;
+    border-width: 3px;
+    border-bottom: solid white;
+    transition: all 50ms;
+    background-color: rgba(255, 0, 0, 0.14);
+}
+
+.break-opened {
+    background: none;
+}
+
+.code-breakdown-title:hover {
+    border-bottom: solid rgba(255, 0, 0, 0.596);
+    cursor: pointer;
+}
+
 /* IMAGES */
 img {
     max-width: 500px;;
@@ -61,6 +97,11 @@ img {
 
 #class-main-ex {
     max-width: 28rem;
+}
+
+#block-comp-img {
+    width: 28rem;
+    height: auto;
 }
 
 /* IDK WHAT THIS IS */
