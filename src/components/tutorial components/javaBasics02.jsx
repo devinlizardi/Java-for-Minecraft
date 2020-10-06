@@ -114,7 +114,7 @@ function JavaBasics02() {
                         typing it out yourself.
                     </p>
                     <img src={PlankInstance} className="rounded img-inst" alt={classPlankAlt.instanceAltText}/>
-                    <br /> <br />
+                    <br />
                     <CodeBreakdown>
                         {'>'} <span className="inline-code"> public </span> This is a keyword we'll explore in the section below <br /><br />
                         {'>'} <span className="inline-code"> class Main </span> Just like how Plank is a class below, we also have to wrap

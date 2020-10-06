@@ -36,6 +36,7 @@
     z-index: 2;
     position: fixed;
     transition: all 100ms ease;
+    cursor: pointer;
 }
 
 /* FUNCTIONAL CLASSES */

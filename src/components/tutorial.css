@@ -39,6 +39,7 @@
     height: auto;
     transform: translateX(100%);
     opacity: 0;
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
