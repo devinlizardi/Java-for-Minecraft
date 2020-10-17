@@ -18,8 +18,8 @@ function JavaBasics01() {
                         <br /> <br />
                         If you're new to programming then this is a fantastic place to start, we're going to walk through one of these concepts then
                         add some complications and explore some common patterns you'll be using later. Also I believe it's important to recognize that
-                        these abstract ideas can be really confusing, and the question / answer sections are meant for you to explore, not test you. I 
-                        recommend opening each answer even if you know it's wrong, just to double check understanding.
+                        these abstract ideas can be really confusing, and the question / answer sections are meant for you to explore; they're not a test. 
+                        I recommend opening each answer even if you know it's wrong, just to double check understanding.
                         <br /><br />
                         With that let's get started!
                     </p>
