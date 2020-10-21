@@ -140,6 +140,13 @@ function JavaBasics02() {
                         <br />
                     </p>
                     <Q2A />
+                    <p>
+                        Fantastic! If you read through this section right after completing the last I recommend taking a break here to let 
+                        the ideas sit. I hope the questions weren't too hard, if you felt they were too easy then that's even better. 
+                        <br /><br />
+                        The next section is the last conceptual one we need to work through before coding a Minecraft mod, but if all this makes 
+                        sense then it should be easy!
+                    </p>
                 </div>
                 <br /><br /><br /><br /><br />
             </div>
