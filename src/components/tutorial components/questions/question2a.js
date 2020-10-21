@@ -70,7 +70,17 @@ function Question2A() {
             <p>
                 <b>Question 3</b> <br/>
                 Last question! Now we know how to access <span className="vocab-attr">attributes</span> let's play with instance functions...
+                <br /><br />
+                <b>Note: </b> Here's some info from the code above; it's all exactly the same as the code it's just here so you don't
+                have to scroll all the way up every time.
             </p>
+            <div className="inline-code" id="ref-code">
+                First {'{'} wealth: 10400;{'}'} <br />
+                Lower {'{'} wealth: 739; <br /> 
+                <span style={{width: "3em", display: "inline-block"}} /> riseUp() {'{'} wealth = wealth * 2; {'}'} {'}'} <br />
+                Main  {'{'} smaug : new First(); bilbo: new Lower(); bard: new Lower(); {'}'}
+            </div>
+            <br />
             <div className="question-code">
                 System.out.println(bilbo.wealth); <br />
                 System.out.println(bard.wealth); <br />
@@ -80,15 +90,43 @@ function Question2A() {
                 System.out.println(bilbo.wealth); <br />
                 System.out.println(bard.wealth); <br />
             </div>
-            <p>What is printed to the console?</p>
+            <p>What is printed to the console? <br /> (The dashes seperate new lines in the print)</p>
             <div className="answers">
                 <AnswerItem ans={
                         <>
-                        739 <br /> 10400 <br /> 739 <br /> 10400 <br />
+                        739 {'---'} 10400 {'---'} 739 {'---'} 10400
                         </>
                     } value="incorrect">
                 Both instances <span className="inline-code">bilbo</span> and <span className="inline-code">bard</span> are from the
-                <span className="inline-code">Lower</span> class, so their wealth starts the same. One of them changes however...
+                <span className="inline-code"> Lower</span> class, so their wealth starts the same. The 10400 is actually the wealth of 
+                smaug, it would take a lot of work from bilbo and the bard to get that much. One of their wealth does change however...
+                </AnswerItem>
+                <AnswerItem ans={
+                        <>
+                        739 {'---'} 739 {'---'} 739 {'---'} 739
+                        </>
+                    } value="incorrect">
+                It's true that the bard and bilbo have the same wealth, but before the last two lines of code the bilbo instance
+                runs the <span className="inline-code"> riseUp() </span> function, and that changes <em> only </em> bilbo's wealth.
+                What does it change to, and how is this show up in the output?
+                </AnswerItem>
+                <AnswerItem ans={
+                        <>
+                        739 {'---'} 739 {'---'} 1478 {'---'} 739
+                        </>
+                    } value="correct">
+                Perfect! The first two lines in the output are the same because bilbo and bard have the same amount of wealth,
+                but once bilbo runs the <span className="inline-code"> riseUp() </span> function he doubles only that instance's wealth.
+                This is really important to understand because instances of classes are seperate from each other, even if they come from
+                the same class.
+                </AnswerItem>
+                <AnswerItem ans={
+                        <>
+                        739 {'---'} 739 {'---'} 1478 {'---'} 1478
+                        </>
+                    } value="incorrect">
+                Not quite; bilbo runs the <span className="inline-code"> riseUp() </span> function, which means <em> only that instance</em>
+                will change their wealth, it won't affect any other instances even if they come from the same class.
                 </AnswerItem>
             </div>
         </div>

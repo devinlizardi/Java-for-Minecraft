@@ -48,14 +48,15 @@ function JavaBasics02() {
                         with 3 of the <b> same </b> <span className="vocab-attr"> attributes</span>.
                         <br /> <br />
                         <span className="vocab-attr">Attributes </span> are a vocab word for this section; they are variables
-                        that describe properties that are shared across similar ideas.
+                        that describe properties that are shared across similar ideas (otherwise known as objects). These are also called "fields"
+                        in Java development.
                         <br /> <br />
                         The <span className="vocab-attr"> hardness, drops self?, </span> and <span className="vocab-attr"> luminance </span> attribute
                         names are all the same per each block, but <em> values </em> differ between them. Because of this, if I were to describe to
                         you a Plank all I have to say is that the hardness is 2, the drops self is true, and the luminance is 0.0. But we can also 
                         take these ideas and make them more abstract!
                     </p>
-                    <p><b> Note: </b> In code we right boolean variables with the word "is" in front, and use the lowerCamelCase style</p>
+                    <p><b> Note: </b> In code we right boolean variables with the word "is" in front, and always use the camelCase style</p>
                     <Q2 />
                     <p>
                         Great work!! Lets transfer the ideas of Attributes to code and take a look at our first class in Java. <br /> <br />
@@ -127,7 +128,7 @@ function JavaBasics02() {
                         {'>'} <span className="inline-code"> //myFirstPlank.hardness {'>>>'} 2 </span> Anything that follows a // like this
                         is a comment, which means it's not actually used as code, it's just for us to read. This comment is meant to show
                         you that you can get the hardness attribute from the Plank instance using this dot syntax <br /><br />
-                        {'>'} <span className="inline-code"> class Plank {'{}'} </span> This is the same class from before, only this time 
+                        {'>'} <span className="inline-code"> class Plank {'{...}'} </span> This is the same class from before, only this time 
                         it's actually used to make an instance variable!
                     </CodeBreakdown>
                     <p>

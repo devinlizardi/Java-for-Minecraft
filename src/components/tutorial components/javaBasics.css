@@ -47,6 +47,12 @@
     color: rgb(92, 92, 92);
 }
 
+#ref-code {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: smaller;
+}
+
 .question-block {
     position: relative;
     padding-left: 15px;
