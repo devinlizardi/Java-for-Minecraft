@@ -55,9 +55,9 @@ class Sidenav extends React.Component {
 
 function SideNavBG() {
     return(
-        <svg className="sidenav-BG" viewBox="0 0 261 460" xmlns="http://www.w3.org/2000/svg">
-            <rect className="back-rect" x="9" y="25" width="225" height="425" rx="13" fill="#78DAC8" fillOpacity="0.48" stroke="#78DAC8" strokeWidth="6"/>
-            <rect x="23" y="8" width="225" height="425" rx="13" fill="white" stroke="#78DAC8" strokeWidth="6"/>
+        <svg className="sidenav-BG" width="255" height="435" viewBox="0 0 291 500" xmlns="http://www.w3.org/2000/svg">
+            <rect className="back-rect" x="9" y="25" width="255" height="415" rx="13" fill="#78DAC8" fillOpacity="0.48" stroke="#78DAC8" strokeWidth="6"/>
+            <rect x="23" y="8" width="255" height="415" rx="13" fill="white" stroke="#78DAC8" strokeWidth="6"/>
         </svg>
     );
 }

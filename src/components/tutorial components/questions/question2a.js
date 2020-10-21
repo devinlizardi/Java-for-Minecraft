@@ -125,7 +125,7 @@ function Question2A() {
                         739 {'---'} 739 {'---'} 1478 {'---'} 1478
                         </>
                     } value="incorrect">
-                Not quite; bilbo runs the <span className="inline-code"> riseUp() </span> function, which means <em> only that instance</em>
+                Not quite; bilbo runs the <span className="inline-code"> riseUp() </span> function, which means <em> only that instance </em>
                 will change their wealth, it won't affect any other instances even if they come from the same class.
                 </AnswerItem>
             </div>

@@ -1,6 +1,6 @@
 :root {
   --main-left-percent: 45%;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 @media (max-width: 1100px) {

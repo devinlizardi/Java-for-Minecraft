@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import './rollingline.css';
 import { CSSTransition } from 'react-transition-group';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 function ScrollTop(props) {
     const breakpoint = 89;
@@ -27,8 +30,7 @@ function ScrollTop(props) {
     }
 
     const scrollTop = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        window.scroll({top : 0, behavior : "smooth"});
         handleScroll();
     }
 
