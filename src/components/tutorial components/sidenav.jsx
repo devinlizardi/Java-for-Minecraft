@@ -11,7 +11,7 @@ class Sidenav extends React.Component {
             javaOpened : true,
             forgemdkOpened : true,
             basicItemOpened : true,
-        }
+        } 
     }
 
     switchSection(name) {
@@ -124,8 +124,9 @@ function BasicItemOpen(props) {
                     {basicitem01 ? "> Item Class" : "Item Class"}</p>
                 <p onClick={() => openSection("basicitem02", "basicitem")} className={basicitem02 ? "opened" : null}>
                     {basicitem02 ? "> Registry Handler" : "Registry Handler"}</p>
-                <p onClick={() => openSection("basicitem03", "basicitem")} className={basicitem03 ? "opened" : null}>
-                    {basicitem03 ? "> Additional Config" : "Additional Config"}</p>
+                    {/* TODO: ADD BACK IN */}
+                {/* <p onClick={() => openSection("basicitem03", "basicitem")} className={basicitem03 ? "opened" : null}>
+                    {basicitem03 ? "> Additional Config" : "Additional Config"}</p> */}
                 </em>
             </div>
 }
