@@ -9,6 +9,8 @@ import JavaBasics01 from './tutorial components/javaBasics01.jsx';
 import JavaBasics02 from './tutorial components/javaBasics02.jsx';
 import JavaBasics03 from './tutorial components/javaBasics03';
 
+import BetaMessage from './appInBeta';
+
 class Tutorial extends React.Component {
     constructor(props) {
         super(props);
@@ -43,6 +45,8 @@ class Tutorial extends React.Component {
                         <ScrollTop sectionClass="forgeroll" /> <br /> 
                         <h5 className="rollingtitle">Forge MDK</h5>
                         {this.state.pageOpen === "forge01" ? null : null}
+                        <br /><br />
+                        <BetaMessage left="10em"/>
                     </div>
                 : null}
 
@@ -51,6 +55,8 @@ class Tutorial extends React.Component {
                         <ScrollTop sectionClass="basicitemroll" /> <br /> 
                         <h5 className="rollingtitle">Basic Item</h5>
                         {this.state.pageOpen === "basicitem01" ? null : null}
+                        <br /><br />
+                        <BetaMessage left="10em"/>
                     </div>
                 : null}
             </div>

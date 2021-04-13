@@ -2,6 +2,8 @@ import React from 'react';
 import './javaBasics.css';
 import './questions/questions.css';
 
+import BetaMessage from './../appInBeta';
+
 function JavaBasics03(props) {
     return(
         <>
@@ -19,6 +21,7 @@ function JavaBasics03(props) {
                     to the game we have to start with and manipulate the base classes by extending them into subclasses.
                 </p>
             </div>
+            <BetaMessage />
         </div>
         </>
     )
