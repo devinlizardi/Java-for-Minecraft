@@ -1,68 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Devin's Minecraft
+## This Project is a Stepping Stone
 
-## Available Scripts
+#### This project is _far_ from complete,
+but I wanted to share what I have so far.
 
-In the project directory, you can run:
+Minecraft is both a blessing and curse to the world of teenage tech education; it provides such an accessible way for students to learn _about_ coding with the in-game redstone system, as well as built-in scripting language - but it's also the biggest distraction ever. Working with students through Zoom, as much as it provides access and engagement for students, also provides so, so, many distractions. 
 
-### `npm start`
+Instead of running away from these problems I leaned into them, and worked on a curriculum that made the lessons _in_ Minecraft. My students would never play the game with me, that was a disaster waiting to happen, but instead we pointed everything we did towards the game. For example, when learning about the theory behind Object Orieneted Programming, which allows us to create and then instance class objects in order to hold and manipulate data, we built a structure (class) in the game, then populated it with items (data). Clarifying the concepts of fields and methods in code was a much easier transition when they had this introduction.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### This project is designed to introduce,
+not provide comprehensive teaching. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This is not the first website out there on coding for Minecraft. Just a quick google search will bring up a seemingly infinite number of instructional videos and coding templates and examples, in my research while building the curriculum I found myself completely overwhelmed, watching hour long videos just looking for hints on where the mysterious documentation for the Forge API might be. It is out there and does have the info you need to start, but the API is changing so rapidly even docs from 3 months ago is too out of date.
 
-### `npm test`
+I therefore decided to focus my efforts on teaching students how to learn by themselves. The content is out there, but unless you follow a single youtuber's Minecraft series for the exact version of Minecraft modding you want to do (and assuming they decide to make a project just like yours), you'll be very confused for a very long time. Not only that, but newer students have no idea what an IDE is, what "printing to console" means, what a compiler is, what a variable is, and if they try to ask this comment on a forum somewhere (often a Discord), they are mocked.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+That brings me to my final goal - to make this information accessible, and free. The beauty of a website (and perhaps the internet at large), is that anyone with adequate internet access can find it. Nowadays, that's not actually too much to ask. I hope this project helps students get started, and they never complete it. I hope you, reading this, find the stepping stones you need to and launch off them without looking back. I hope to make that stepping stone for someone.
